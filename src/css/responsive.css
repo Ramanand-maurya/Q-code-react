@@ -51,7 +51,7 @@
     }
     ul.main-nav>li ul.sub-menu-lists {
         display: none;
-        box-shadow: 0px 2px 7px #1d1c1c33;
+        border-bottom: 1px solid rgb(29 28 28/10%);
         padding: 10px;
     }
     .sub-menu-block .sub-menu-head {
@@ -227,7 +227,7 @@
         width: 100%;
         padding: 0px 15px;
         transition: all .3s ease-in-out;
-        box-shadow: 0px 2px 7px #1d1c1c33;
+        box-shadow: 0 1px 1px rgb(29 28 28 / 10%);
         height: 0px;
         opacity: 0;
     }
@@ -238,7 +238,7 @@
     .sub-menu-block{
         padding-top: 0px;
         transition: all .3s ease-in-out;
-        box-shadow: 0px 2px 7px #1d1c1c33;
+        box-shadow: 0 1px 1px rgb(29 28 28 / 10%);
         height: 0px;
         opacity: 0;
     }
@@ -419,6 +419,11 @@
     }
     .slider-section .tri-6{
         display: none;
+    }
+  }
+  @media only screen and(max-width:600px){
+    .services-section-st .card-serv {
+        max-width: 325px;
     }
   }
   @media only screen and (max-width: 576px) {

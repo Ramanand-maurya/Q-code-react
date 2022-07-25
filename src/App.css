@@ -134,7 +134,7 @@ top: -.5em;
 }
 
 a {
-color: #007bff;
+color: #024099;
 text-decoration: none;
 background-color: transparent;
 -webkit-text-decoration-skip: objects;
@@ -143,7 +143,7 @@ outline: none !important;
 }
 
 a:hover {
-color: #0056b3;
+color: #024099;
 text-decoration: none;
 }
 
@@ -578,6 +578,10 @@ font-size: 20px;
         -ms-transform-origin: top center;
         transform-origin: top center;
       }
+      ul.main-nav > li:hover > a.mega-menu span:after {
+        transform: rotate(-135deg);
+        margin-bottom: -4px;
+    }
       ul.main-nav > li:hover > div.sub-menu-block.active {
         background-color: #fff;
         visibility: visible;
@@ -739,7 +743,7 @@ ul.main-nav > li > div.sub-menu-block.subMenuList .col-lg-3{
     width: 0%;
     height: 100%;
     position: absolute;
-    background: #0056b3;
+    background: #024099;
     top: 0;
     transition: all .3s ease-in-out;
     z-index: -1;
@@ -1342,7 +1346,7 @@ ul.main-nav > li > div.sub-menu-block.subMenuList .col-lg-3{
     width: 0%;
     height: 100%;
     position: absolute;
-    background: #0056b3;
+    background: #024099;
     top: 0;
     transition: all .3s ease-in-out;
     z-index: -1;
@@ -1599,7 +1603,7 @@ ul.main-nav > li > div.sub-menu-block.subMenuList .col-lg-3{
     color: #ffffff;
     font-size: 24px;
     transition: all .3s cubic-bezier(0, -0.05, 0.99, 0.91);
-    background: linear-gradient(to bottom, #0056b3 50%, #E72078 50%);
+    background: linear-gradient(to bottom, #024099 50%, #E72078 50%);
     background-size: 100% 200%;
     border: none;
     background-position: bottom left;

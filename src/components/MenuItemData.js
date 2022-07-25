@@ -10,7 +10,7 @@ const MenuItemData = [
         SubMenu:false,
         MegaMenu:false,
         MenuItemName:"About us",
-        MenuItemLink:"/",
+        MenuItemLink:"/about",
         ChildMenu:[
             {
                 SubMenu: false,

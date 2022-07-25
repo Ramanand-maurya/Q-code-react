@@ -31,8 +31,8 @@ const Navbar = () => {
             </div>
             <div className="col-md-4">
               <div className="right-section">
-                <div className="Number1"><Link to="tel:+911204323577"><img src={Cil_phone} /> <span>+91 120 432 3577</span></Link></div>
-                <div className="gmail1"><Link to="mailto:info@qwertycode.in"><img src={Iconmessage} /> <span>info@qwertycode.in</span></Link></div>
+                <div className="Number1"><a href="tel:+911204323577"><img src={Cil_phone} /> <span>+91 120 432 3577</span></a></div>
+                <div className="gmail1"><a href="mailto:info@qwertycode.in"><img src={Iconmessage} /> <span>info@qwertycode.in</span></a></div>
               </div>
             </div>
           </div>

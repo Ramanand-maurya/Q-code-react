@@ -64,6 +64,7 @@ export default class ServiceSlider extends Component {
                             ServiceSliderData.map((val, Ind) => {
                                 return (
                                     <div className="col-12" key={Ind}>
+                                        <Link to="/">
                                         <div className="card-serv">
                                             <div className="services-icon">
                                                 <img src={val.Imgsrc} />
@@ -76,6 +77,7 @@ export default class ServiceSlider extends Component {
                                             </div>
                                             <span className={`triangle triangle-${Ind+1}`}></span>
                                         </div>
+                                        </Link>
                                     </div>
                                 );
                             })
