@@ -21,6 +21,7 @@ function WorkDetail() {
                             <span className="tri-8"></span>
                             <span className="tri-9"></span>
                         </div>
+                        
                     </div>
                     <div className="row pb-5 hr-line">
                         {
