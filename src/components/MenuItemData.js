@@ -33,7 +33,7 @@ const MenuItemData = [
         SubMenu:false,
         MegaMenu:true,
         MenuItemName:"Services",
-        MenuItemLink:"/",
+        MenuItemLink:"/services",
         ChildMenu:[
             {
                 SubMenu:true,

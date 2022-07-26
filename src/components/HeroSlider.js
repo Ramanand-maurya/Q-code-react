@@ -13,6 +13,14 @@ export default class HeroSlider extends Component {
             fade: true,
             autoplay: true,
             autoplaySpeed: 2000,
+            responsive: [
+                {
+                  breakpoint: 767,
+                  settings: {
+                    dots: false,
+                  }
+                }
+              ]
         };
         return (
             <section className="slider-section">
@@ -29,7 +37,7 @@ export default class HeroSlider extends Component {
                                                     <p>{val.Content}</p>
                                                 </div>
                                                 <div className="slider-heading">
-                                                    <h3>{val.Title} <span>{val.TitleSpan}</span><br></br>
+                                                    <h3>{val.Title} <span className="sliderUline">{val.TitleSpan}<img src="images/Vector1.png"></img></span><br></br>
                                                         {val.TitleAfterSpan}</h3>
                                                 </div>
                                                 <div className="slider-btn">

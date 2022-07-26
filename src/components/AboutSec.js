@@ -1,29 +1,32 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-function AboutSec() {
+function AboutSec(props) {
     return (
         <>
-        <section className="about-section-st">
+        <section className="about-section-st aboutPage1">
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">
                         <div className="main-about">
                             <div className="about-content">
-                                our company
+                                {props.title}
                             </div>
                             <div className="about-heading">
-                                <h1>Top IT Company in India - <span className="qty">Qwerty <span>Code</span></span></h1>
+                                <h1>{props.heading}</h1>
                             </div>
                             <div className="about-para">
-                                <p>Having a team of talented professionals with decades of experience. We, at Qwerty Code believe in delivering unparalleled services to the business around the globe. Qwerty Code Pvt. Ltd. has initiated to assist business enterprises to achieve efficiency and effectiveness by taking them into the e-world, being partners in e-revolution.</p>
+                                <p>{props.para}</p>
                             </div>
                             <div className="about-btn">
-                                <Link to="/about" target="_self">Discover Now <span><img src="images/icon/Arrow back.svg" /></span></Link>
+                                <Link style={props.style1} to={props.linkBtn} target="_self">{props.linkName} <span><img src={props.linkArrow} /></span></Link>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <span style={props.style2} className="tri-1"></span>
+            <span style={props.style2} className="tri-2"></span>
+            <span style={props.style2} className="tri-3"></span>
         </section>
         </>
     );

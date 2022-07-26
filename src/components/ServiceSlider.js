@@ -11,7 +11,7 @@ export default class ServiceSlider extends Component {
             slidesToShow: 3,
             infinite: true,
             fade: false,
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 2500,
             responsive: [
                 {

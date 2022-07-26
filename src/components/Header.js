@@ -1,5 +1,5 @@
 import React, { useState }  from 'react';
-import { Link } from "react-router-dom";
+import { Link,NavLink  } from "react-router-dom";
 import Cil_phone from '../images/icon/cil_phone.svg';
 import Iconmessage from '../images/icon/iconoir_message-text.svg';
 import Logo from '../images/logo.png';
@@ -66,8 +66,8 @@ const Navbar = () => {
                   {
                     MenuItemData.map((menuVal, Ind) => {
                       return (
-                        <li className={`top-level-link ${Ind == 0 ? "active" : ""} ${menuVal.SubMenu ? "position-relative" : ""}`} key={Ind}>
-                          <Link to={menuVal.MenuItemLink} className={` ${menuVal.MegaMenu || menuVal.SubMenu ? "mega-menu" : ""} ${isActive ? "active" : ""}`} onClick={() => OpenMenuActive(Ind)}><span>{menuVal.MenuItemName}</span></Link>
+                        <li className={`top-level-link ${menuVal.SubMenu ? "position-relative" : ""}`} key={Ind}>
+                          <NavLink activeclassname="current" to={menuVal.MenuItemLink} className={` ${menuVal.MegaMenu || menuVal.SubMenu ? "mega-menu" : ""}`} onClick={() => OpenMenuActive(Ind)}><span>{menuVal.MenuItemName}</span></NavLink>
                           {menuVal.SubMenu || menuVal.MegaMenu ?
                             <div className={`sub-menu-block ${menuVal.SubMenu ? "subMenuList" : ""} ${isActive ? "active" : ""}`}>
                             <div className="row">

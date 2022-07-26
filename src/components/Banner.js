@@ -12,6 +12,9 @@ function Banner(props){
                     </div>
                 </div>
             </div>
+            <span className="tri-1"></span>
+            <span className="tri-2"></span>
+            <span className="tri-3"></span>
         </div>
     );
 }

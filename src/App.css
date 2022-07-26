@@ -386,7 +386,7 @@ font-size: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:12px 0px 12px 0px;
+    padding:12px 0px 12px 70px;
 }
 .topHeader .right-section div a{
     font-size: 12px;
@@ -490,7 +490,7 @@ font-size: 20px;
     font-weight: 400;
     box-sizing: border-box;
   }
-  ul.main-nav > li.active > a{
+  ul.main-nav > li > a[aria-current="page"]{
       color: #E72078;
   }
   ul.main-nav > li:hover {
@@ -613,6 +613,7 @@ font-size: 20px;
    ul.main-nav > li > a.mega-menu.active span:after {
     transform:rotate(-135deg);
     margin-bottom: -4px;
+    border-color: #E72078;
 }
   @media only screen and (min-width: 0px) {
     .ic.menu {
@@ -714,10 +715,10 @@ ul.main-nav > li > div.sub-menu-block.subMenuList .col-lg-3{
     position: relative;
     display: inline-block;
 }
-.slider-heading h3 span:before {
-    content: url(./images/Vector1.png);
+.slider-heading h3 span.sliderUline img{
     position: absolute;
-    top: 22px;
+    width: 100%;
+    bottom: -11px;
     left: 0;
     right: 0;
 }
@@ -947,6 +948,7 @@ ul.main-nav > li > div.sub-menu-block.subMenuList .col-lg-3{
 .main-services {
     text-align: center;
     padding: 60px 0px;
+    padding-bottom: 40px;
 }
 .services-section-st .main-services .services-content {
     text-transform: uppercase;
@@ -1657,4 +1659,612 @@ ul.main-nav > li > div.sub-menu-block.subMenuList .col-lg-3{
     bottom: 0px;
     width: 100%;
     height: 100%;
+}
+.banner-wrap .tri-1 {
+    content: "";
+    position: absolute;
+    top: 40px;
+    width: 0;
+    left: 100px;
+    z-index: 1;
+    height: 0;
+    border: 30px solid #FE6D6D;
+    border-left: 0px solid transparent;
+    border-right: 30px solid transparent;
+    transform: rotate(6deg);
+    border-top: 0px solid transparent;
+}
+.banner-wrap .tri-2 {
+    content: "";
+    position: absolute;
+    top: 31px;
+    width: 0;
+    left: 38%;
+    z-index: 1;
+    height: 0;
+    border: 40px solid #80ABFF;
+    border-left: 0px solid transparent;
+    border-right: 40px solid transparent;
+    transform: rotate(285deg);
+    border-top: 0px solid transparent;
+}
+.banner-wrap .tri-3 {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 0;
+    right: 80px;
+    z-index: 1;
+    height: 0;
+    border: 40px solid #FFB967;
+    border-left: 0px solid transparent;
+    border-right: 40px solid transparent;
+    transform: rotate(348deg);
+    border-top: 0px solid transparent;
+}
+.aboutPage1 .tri-1 {
+    content: "";
+    position: absolute;
+    top: 46px;
+    width: 0;
+    left: 27%;
+    z-index: 100;
+    height: 0;
+    border: 30px solid #FE6D6D;
+    border-left: 0px solid transparent;
+    border-right: 30px solid transparent;
+    transform: rotate(72deg);
+    border-top: 0px solid transparent;
+}
+.aboutPage1 .tri-2 {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    width: 0;
+    left: 7%;
+    z-index: 100;
+    height: 0;
+    border: 40px solid #B07FFF;
+    border-left: 0px solid transparent;
+    border-right: 40px solid transparent;
+    transform: rotate(71deg);
+    border-top: 0px solid transparent;
+}
+.aboutPage1 .tri-3 {
+    content: "";
+    position: absolute;
+    top: 82%;
+    width: 0;
+    right: 5%;
+    z-index: 100;
+    height: 0;
+    border: 30px solid #FFEA7F;
+    border-left: 0px solid transparent;
+    border-right: 30px solid transparent;
+    transform: rotate(78deg);
+    border-top: 0px solid transparent;
+}
+.aboutPage1{
+    position: relative;
+}
+
+/* leader section */
+
+.LeadershipSection {
+    padding-top: 60px;
+    position: relative;
+}
+.LeadershipSection .tri-1 {
+    content: "";
+    position: absolute;
+    top: 52px;
+    width: 0px;
+    left: 42%;
+    z-index: 100;
+    height: 0px;
+    border-width: 0px 30px 30px 0px;
+    border-style: solid;
+    border-color: transparent transparent #FFEA7F;
+    border-image: initial;
+    transform: rotate(59deg);
+}
+.LeadershipSection .tri-2 {
+    content: "";
+    position: absolute;
+    top: 90px;
+    width: 0;
+    right: 16%;
+    z-index: 100;
+    height: 0;
+    border: 40px solid #FFB967;
+    border-left: 0px solid transparent;
+    border-right: 40px solid transparent;
+    transform: rotate(254deg);
+    border-top: 0px solid transparent;
+}
+.LeadershipSection .tri-3 {
+    content: "";
+    position: absolute;
+    top: 12.5%;
+    width: 0;
+    left: 54%;
+    z-index: 100;
+    height: 0;
+    border: 30px solid #FE6D6D;
+    border-left: 0px solid transparent;
+    border-right: 30px solid transparent;
+    transform: rotate(1deg);
+    border-top: 0px solid transparent;
+}
+.LeadershipSection .tri-4 {
+    content: "";
+    position: absolute;
+    top: 46%;
+    width: 0;
+    left: 44%;
+    z-index: 100;
+    height: 0;
+    border: 30px solid #FFEA7F;
+    border-left: 0px solid transparent;
+    border-right: 30px solid transparent;
+    transform: rotate(72deg);
+    border-top: 0px solid transparent;
+}
+.LeadershipSection .tri-5 {
+    content: "";
+    position: absolute;
+    bottom: 42%;
+    width: 0;
+    right: 20%;
+    z-index: 100;
+    height: 0;
+    border: 40px solid #FFB967;
+    border-left: 0px solid transparent;
+    border-right: 40px solid transparent;
+    transform: rotate(256deg);
+    border-top: 0px solid transparent;
+}
+.LeadershipSection .tri-6 {
+    content: "";
+    position: absolute;
+    top: 60.4%;
+    width: 0;
+    right: 39%;
+    z-index: 100;
+    height: 0;
+    border: 30px solid #FE6D6D;
+    border-left: 0px solid transparent;
+    border-right: 30px solid transparent;
+    transform: rotate(359deg);
+    border-top: 0px solid transparent;
+}
+.LeadershipSection .LeadershipTitle p {
+    color: #696969;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.LeadershipSection .LeadershipHeading h5 {
+    color: rgba(18, 18, 18, 0.87);
+    font-size: 38px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.LeadershipSection .LeadershipPara p {
+    color: #696969;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.LeadershipSection .LeadershipPara {
+    margin-bottom: 34px;
+}
+
+.LeadershipSection .card-leader {
+    border: 1px solid #EEEEEE;
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.LeadershipSection .card-leader .leader-img {
+    padding-top: 5px;
+    margin: auto;
+    padding-bottom: 36px;
+    display: flex;
+    justify-content: center;
+}
+
+.LeadershipSection .card-leader .leader-title h6 {
+    color: rgba(18, 18, 18, 0.87);
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 8px;
+}
+
+.LeadershipSection .card-leader .leader-content-para .designation {
+    color: rgba(18, 18, 18, 0.85);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.LeadershipSection .card-leader .leader-content-para p {
+    color: rgba(18, 18, 18, 0.54);
+    font-size: 15px;
+    font-weight: 500;
+}
+.card-leader .social-icons {
+    padding-top: 24px;
+    padding-bottom: 15px;
+}
+
+.card-leader .social-icons a {
+    width: 48px;
+    height: 48px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 5px;
+    transition: all .3s cubic-bezier(0, -0.05, 0.99, 0.91);
+    background: linear-gradient(to bottom, #024099 50%, #E72078 50%);
+    background-size: 100% 200%;
+    border: none;
+    background-position: bottom left;
+}
+.card-leader .social-icons a:hover {
+    background-position: top left;
+}
+.Leader-Team {
+    padding-bottom: 90px;
+}
+.Leader-Team .slick-arrow {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: transparent;
+    transition: 0.2s background-color ease-in-out 0s;
+    padding: 0;
+    border: none;
+    position: absolute;
+    box-shadow: 0px 0px 8px rgb(37 37 37 / 12%);
+}
+.Leader-Team .slick-arrow:hover{
+    background-color: rgba(231, 32, 120, 0.25);
+}
+.Leader-Team .slick-next {
+    right: calc(0% + (15px));
+    bottom: 25px;
+}
+.Leader-Team .slick-prev {
+    right: calc(0% + (130px));
+    bottom: 25px;
+}
+.Leader-Team .slick-next:before {
+    content: url(./images/Arrowforword.png);
+    line-height: 60px;
+}
+
+.Leader-Team .slick-prev:before {
+    content: url(./images/ArrowBack.png);
+    line-height: 60px;
+}
+.LeadershipSection .tri-1 {
+    content: "";
+    position: absolute;
+    top: 52px;
+    width: 0px;
+    left: 42%;
+    z-index: 100;
+    height: 0px;
+    border-width: 0px 30px 30px 0px;
+    border-style: solid;
+    border-color: transparent transparent #FFEA7F;
+    border-image: initial;
+    transform: rotate(59deg);
+}
+.LeadershipSection .tri-2 {
+    content: "";
+    position: absolute;
+    top: 90px;
+    width: 0;
+    right: 16%;
+    z-index: 100;
+    height: 0;
+    border: 40px solid #FFB967;
+    border-left: 0px solid transparent;
+    border-right: 40px solid transparent;
+    transform: rotate(254deg);
+    border-top: 0px solid transparent;
+}
+.LeadershipSection .tri-3 {
+    content: "";
+    position: absolute;
+    top: 12.5%;
+    width: 0;
+    left: 54%;
+    z-index: 100;
+    height: 0;
+    border: 30px solid #FE6D6D;
+    border-left: 0px solid transparent;
+    border-right: 30px solid transparent;
+    transform: rotate(1deg);
+    border-top: 0px solid transparent;
+}
+.LeadershipSection .tri-4 {
+    content: "";
+    position: absolute;
+    top: 46%;
+    width: 0;
+    left: 44%;
+    z-index: 100;
+    height: 0;
+    border: 30px solid #FFEA7F;
+    border-left: 0px solid transparent;
+    border-right: 30px solid transparent;
+    transform: rotate(72deg);
+    border-top: 0px solid transparent;
+}
+.LeadershipSection .tri-5 {
+    content: "";
+    position: absolute;
+    bottom: 42%;
+    width: 0;
+    right: 20%;
+    z-index: 100;
+    height: 0;
+    border: 40px solid #FFB967;
+    border-left: 0px solid transparent;
+    border-right: 40px solid transparent;
+    transform: rotate(256deg);
+    border-top: 0px solid transparent;
+}
+.LeadershipSection .tri-6 {
+    content: "";
+    position: absolute;
+    top: 60.4%;
+    width: 0;
+    right: 39%;
+    z-index: 100;
+    height: 0;
+    border: 30px solid #FE6D6D;
+    border-left: 0px solid transparent;
+    border-right: 30px solid transparent;
+    transform: rotate(359deg);
+    border-top: 0px solid transparent;
+}
+/**********Contact Page css***********/
+.contactForm {
+    padding: 40px 0px;
+    position: relative;
+}
+.contactForm .contactF {
+    padding-top: 40px;
+}
+.contactForm .tri-1 {
+    content: "";
+    position: absolute;
+    top: 28px;
+    width: 0;
+    left: 34%;
+    z-index: 100;
+    height: 0;
+    border: 30px solid #FFEA7F;
+    border-left: 0px solid transparent;
+    border-right: 30px solid transparent;
+    transform: rotate(72deg);
+    border-top: 0px solid transparent;
+}
+.contactForm .tri-2 {
+    content: "";
+    position: absolute;
+    bottom: 75px;
+    width: 0;
+    left: 11%;
+    z-index: 100;
+    height: 0;
+    border: 40px solid #FFB967;
+    border-left: 0px solid transparent;
+    border-right: 40px solid transparent;
+    transform: rotate(260deg);
+    border-top: 0px solid transparent;
+}
+.contactForm .tri-3 {
+    content: "";
+    position: absolute;
+    top: 54%;
+    width: 0;
+    left: 55%;
+    z-index: 100;
+    height: 0;
+    border: 30px solid #FE6D6D;
+    border-left: 0px solid transparent;
+    border-right: 30px solid transparent;
+    transform: rotate(10deg);
+    border-top: 0px solid transparent;
+}
+.contactForm .contactF .inputField {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contactForm .contactF .inputField div{
+    position: relative;
+}
+.contactForm .contactF .inputField div span {
+    position: absolute;
+    right: 18px;
+    top: 8px;
+}
+.contactForm .contactF .inputField div .rotate1 {
+    transform: rotate(264deg);
+}
+.contactForm .contactF .inputField input {
+    outline: none;
+    border: 1px solid rgba(18, 18, 18, 0.54);
+    border-radius: 8px;
+    height: 45px;
+}
+.contactForm .contactF textarea{
+    height: 216px;
+    padding: 0;
+    margin: 0;
+    padding: 15px;
+    outline: none;
+    border: 1px solid rgba(18, 18, 18, 0.54);
+    border-radius: 8px;
+    display: block;
+}
+.contactForm .contactF .textareaBox {
+    position: relative;
+}
+.contactForm .contactF .textareaBox span {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+}
+.contactForm .contactF .inputField input:focus {
+    outline: none;
+    box-shadow: none;
+}
+.form-control::placeholder{
+    color: #696969;
+    font-size: 16px;
+    font-weight: 500;
+}
+.servicesHeading {
+    margin: 0;
+    font-size: 16px;
+    color: #696969;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.servicesBtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.servicesBtn .btnfirst1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicesBtn .btnSecond2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicesBtn .btnfirst1 div {
+    margin-right: 15px;
+}
+
+.servicesBtn .btnSecond2 div {
+    margin-left: 15px;
+}
+.servicesBtn div a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #696969;
+    border: 1px solid #696969;
+    padding: 12px 19px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.servicesBtn div a.active,.servicesBtn div a:hover {
+    color: #E72078;
+    border-color: #E72078;
+}
+
+.sendMessageBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.sendMessageBtn a {
+    background-color: #E72078;
+    width: 100%;
+    max-width: 312px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    color: #fff;
+    padding: 15px 0px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+}
+.sendMessageBtn a:before {
+    content: "";
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    background: #024099;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+    z-index: -1;
+    border-radius: 4px;
+    left: 0;
+    pointer-events: none;
+}
+.sendMessageBtn a:hover:before {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+.addressBox .locationArea {
+    border: 1px solid #EEEEEE;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.addressBox .locationArea .adHead h5 {
+    color: #024099;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.addressBox .locationArea .addPlace p {
+    color: rgba(18, 18, 18, 0.87);
+    font-size: 20px;
+    margin-bottom: 3px;
+    font-weight: 500;
+}
+
+.addressBox .locationArea .addPlace {
+    padding-left: 52px;
+}
+.addressBox .locationArea .addPlace h6 {
+    color: #E72078;
+    margin-bottom: 3px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.addressBox .locationArea .adHead h5 span {
+    display: inline-block;
+    margin-right: 10px;
 }

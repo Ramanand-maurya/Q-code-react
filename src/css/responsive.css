@@ -287,11 +287,19 @@
         transition: all .3s ease-in;
     }
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     .services-section-st .card-serv{
         padding: 5px;
         min-height: auto;
         margin: 0px auto;
+    }
+    .image-slider{
+        display: flex;
+        justify-content: center;
+    }
+    #animationSlider{
+        max-width: 300px;
+        height: 300px;
     }
     .trigger1 span:nth-child(2) {
         margin-top: 12px;
@@ -421,14 +429,21 @@
         display: none;
     }
   }
-  @media only screen and(max-width:600px){
-    .services-section-st .card-serv {
-        max-width: 325px;
-    }
-  }
   @media only screen and (max-width: 576px) {
     .nav-section .nav-content .logo-sec .logoTitle{
         padding-left: 0px;
+    }
+    .services-section-st .card-serv {
+        max-width: 325px;
+    }
+    .slider-section .tri-4{
+        display: none;
+    }
+    .recent-work-slider .tri-11{
+        display: none;
+    }
+    .recent-work-slider{
+        text-align: center;
     }
     .slider-section .slider-content{
         padding-top: 25px;
