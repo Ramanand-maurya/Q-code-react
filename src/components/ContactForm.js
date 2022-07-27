@@ -1,10 +1,35 @@
 import React, { useState } from "react";
 import {Link} from "react-router-dom";
 function ContactForm(){
-    const [isOpen, setIsopen] = useState(false);
-  const activeBtn = () => {
-      isOpen === true ? setIsopen(false) : setIsopen(true);
-  };
+    const [active, setSelected] = useState(null);
+    const activeBtn = (ind) => {
+    if (active === ind) {
+    return setSelected(null);
+    }
+    setSelected(ind);
+    };
+    const textData = [
+        {
+          id: 1,
+          text: 'Web Design',
+          linkbtn: '',
+        },
+        {
+          id: 2,
+          text: 'Web Development',
+          linkbtn: '',
+        },
+        {
+          id: 3,
+          text: 'Mobile App Development',
+          linkbtn: '',
+        },
+        {
+          id: 4,
+          text: 'Other',
+          linkbtn: '',
+        }
+      ];
     return(
         <>
         <form>
@@ -41,18 +66,13 @@ function ContactForm(){
                     <div className="col-lg-12">
                         <h5 className="servicesHeading">services</h5>
                         <div className="servicesBtn">
-                            <div>
-                                <Link onClick={activeBtn} to="" className={`${isOpen == true ? 'active' : ''}`}>Web Design</Link>
-                            </div>
-                            <div>
-                                <Link onClick={activeBtn} className={`${isOpen == true ? 'active' : ''}`} to="">Web Development</Link>
-                            </div>
-                            <div>
-                                <Link onClick={activeBtn} className={`${isOpen == true ? 'active' : ''}`} to="">Mobile App Development</Link>
-                            </div>
-                            <div>
-                                <Link onClick={activeBtn} className={`${isOpen == true ? 'active' : ''}`} to="">Other</Link>
-                            </div>
+                            {textData.map((val,ind) =>{
+                                return(
+                                    <div>
+                                        <Link className={`${active == ind ? 'active' : ''}`} onClick={() => activeBtn(ind)} to=''>{val.text}</Link>
+                                    </div>
+                                )
+                            })}
                         </div>
                         <div className="sendMessageBtn">
                             <Link to="">send message</Link>

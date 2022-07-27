@@ -39,9 +39,9 @@ function Footer(){
                                             <li><div className="footer-middle-head">
                                                 <h6>Company</h6>
                                             </div></li>
-                                            <li><Link to="/">Why Us</Link></li>
-                                                <li><Link to="/">Blog Posts</Link></li>
-                                                <li><Link to="/">Get In Touch</Link></li>
+                                            <li><Link to="/about">Why Us</Link></li>
+                                            <li><Link to="/">Blog Posts</Link></li>
+                                            <li><Link to="/contact">Get In Touch</Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -66,6 +66,7 @@ function Footer(){
                                         </div></li>
                                         <li><Link to="/">Bulk SMS</Link></li>
                                         <li><Link to="/">E-mail Services</Link></li>
+                                        <li><Link to="/career">Career</Link></li>
                                     </ul>
                                 </div>
                             </div>

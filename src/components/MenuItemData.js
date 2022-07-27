@@ -133,7 +133,7 @@ const MenuItemData = [
     {
         SubMenu:false,
         MegaMenu:false,
-        MenuItemName:"Contact Us",
+        MenuItemName:"Contact us",
         MenuItemLink:"contact",
         ChildMenu:[],
     }

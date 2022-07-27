@@ -134,12 +134,12 @@ export default class TeamSlider extends Component {
                     }
                 </Slider>
                 </div>
-                <span class="tri-1"></span>
-                <span class="tri-2"></span>
-                <span class="tri-3"></span>
-                <span class="tri-4"></span>
-                <span class="tri-5"></span>
-                <span class="tri-6"></span>
+                <span className="tri-1"></span>
+                <span className="tri-2"></span>
+                <span className="tri-3"></span>
+                <span className="tri-4"></span>
+                <span className="tri-5"></span>
+                <span className="tri-6"></span>
             </section>
         );
     }

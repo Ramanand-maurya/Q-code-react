@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import HomePage from './sitePages/HomePage';
 import About from './sitePages/About';
 import Contact from './sitePages/contact';
+import Career from './sitePages/Career';
 function App() {
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
               <Route exact path='/' element={< HomePage />}></Route>
               <Route exact path='/about' element={< About />}></Route>
               <Route exact path='/contact' element={< Contact />}></Route>
+              <Route exact path='/career' element={< Career />}></Route>
           </Routes>
           <Footer />
       </Router>
