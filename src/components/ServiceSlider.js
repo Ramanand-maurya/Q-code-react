@@ -11,6 +11,7 @@ export default class ServiceSlider extends Component {
             slidesToShow: 3,
             infinite: true,
             fade: false,
+            draggable: false,
             autoplay: false,
             autoplaySpeed: 2500,
             responsive: [
@@ -20,6 +21,7 @@ export default class ServiceSlider extends Component {
                     slidesToShow: 2,
                     slidesToScroll:1,
                     infinite: true,
+                    draggable: false,
                     dots: true,
                   }
                 },
@@ -30,6 +32,7 @@ export default class ServiceSlider extends Component {
                     slidesToScroll: 1,
                     initialSlide: 2,
                     arrows: false,
+                    draggable: true,
                     dots: false,
                   }
                 },
@@ -40,6 +43,7 @@ export default class ServiceSlider extends Component {
                     slidesToScroll: 1,
                     arrows: false,
                     dots: false,
+                    draggable: true,
                   }
                 }
               ]
@@ -63,14 +67,14 @@ export default class ServiceSlider extends Component {
                         {
                             ServiceSliderData.map((val, Ind) => {
                                 return (
-                                    <div className="col-12" key={Ind}>
-                                        <Link to="/">
+                                    <div className="col-12" key={val.id}>
+                                        <Link to={`/ServiceDetail/${val.id}`}>
                                         <div className="card-serv">
                                             <div className="services-icon">
                                                 <img src={val.Imgsrc} />
                                             </div>
                                             <div className="services-title">
-                                                <h5>{val.Title} <span> {val.TitleSpan}</span></h5>
+                                            <h5 dangerouslySetInnerHTML={{__html: val.Title}}></h5>
                                             </div>
                                             <div className="service-content-para">
                                                 <p>{val.Content}</p>

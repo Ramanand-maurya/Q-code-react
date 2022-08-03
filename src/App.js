@@ -11,17 +11,24 @@ import HomePage from './sitePages/HomePage';
 import About from './sitePages/About';
 import Contact from './sitePages/contact';
 import Career from './sitePages/Career';
+import GoToTop from './components/GoToTop';
+import ServiceDetail from './sitePages/ServiceDetail';
+import ServiceDetailPage from './sitePages/ServiceDetailPage';
 function App() {
   return (
     <>
       <div className="main-wrapper">
-      <Router>
+      <Router> 
+        <GoToTop />
           <Header />
           <Routes>
               <Route exact path='/' element={< HomePage />}></Route>
               <Route exact path='/about' element={< About />}></Route>
               <Route exact path='/contact' element={< Contact />}></Route>
               <Route exact path='/career' element={< Career />}></Route>
+              <Route exact path='/ServiceDetail/:serviceId' element={<ServiceDetail />}></Route>
+              <Route exact path='/career/:jobId' element={< Career />}></Route>
+              <Route exact path='/ServiceDetailPage/:serviceId/:serDetPageId' element={< ServiceDetailPage />}></Route>
           </Routes>
           <Footer />
       </Router>

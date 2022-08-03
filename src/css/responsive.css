@@ -1,153 +1,356 @@
 @media only screen and (min-width: 991px) {
-    .triggerBtn{
+    .triggerBtn {
         display: none;
     }
+
     .logo-sec1 {
         display: none;
     }
-    .sidebar-overlay{
+
+    .sidebar-overlay {
         display: none;
     }
 }
+@media only screen and (max-width: 1450px) {
+    .Service-detail-page .tri-5{
+        left: 3%;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    .servicesPage .tri-3{
+        top: 88px;
+    }
+    .servicesPage .tri-1{
+        left: 3%;
+    }
+    .Service-detail-page .tri-5{
+        left: 1%;
+    }
+}
 @media only screen and (max-width: 1200px) {
-    .slider-section .tri-3{
+    .slider-section .tri-3 {
         bottom: 8px;
     }
-    .services-section-st .card-serv{
+    .leader-title{
+        min-height: 65px;
+    }
+    .LeadershipSection .tri-4{
+        top: 47%;
+    }
+    .topHeader .right-section {
+        padding:12px 0px 12px 0px;
+    }
+    .banner-wrap .tri-3 {
+        top: 70%;
+    }
+    .LeadershipSection .tri-3{
+        display: none;
+    }
+    .LeadershipSection .tri-6{
+        display: none;
+    }
+    .servicesBtn {
+        display: flex;
+        justify-content: normal;
+        flex-wrap: wrap;
+        margin-left: -9px;
+    }
+    .servicesBtn div {
+        margin-left: 9px;
+        margin-top: 15px;
+    }
+    .servicesBtn .btnSecond2 div {
+        margin-left: 0px;
+
+    }
+
+    .servicesBtn .btnfirst1 div {
+        margin-right: 0px;
+        margin-bottom: 15px;
+    }
+
+    .services-section-st .card-serv {
         min-height: 494px;
     }
-    .recent-work-slider{
+    .services-section-st.aboutPage2 .card-serv{
+        min-height: auto;
+    }
+
+    .recent-work-slider {
         padding-top: 100px;
         padding-bottom: 35px;
     }
-    .recent-work-para{
+
+    .recent-work-para {
         padding-top: 0px;
     }
-    .recent-work-slider .tri-11{
+
+    .recent-work-slider .tri-11 {
         bottom: 100px;
     }
-    .card-main .card-head h5{
+
+    .card-main .card-head h5 {
         font-size: 22px;
     }
-  }
 
-  @media only screen and (max-width: 992px) {
-    .topHeader .right-section div.Number1 span{
+    .recent-work-slider .recent-work-heading h4 {
+        font-size: 34px;
+        line-height: 48px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    ul.main-nav>li>a.mega-menu.active span:after {
+        transform: rotate(-135deg);
+        margin-bottom: -4px;
+        top: 20px;
+    }
+    .footer-right-side ul{
+        padding-left: 0px;
+    }
+    .second-Modal .submitBtn a{
+        padding: 10px 0px;
+        max-width: 250px;
+        font-size: 12px;
+    }
+    .cm-model-box{
+        margin: 1.75rem 2rem;
+    }
+    .cm-section-modal .linerCard .applyBtn a{
+        padding: 10px 0px;
+        max-width: 120px;
+        font-size: 12px;
+    }
+    .closBtn{
+        top: 18px;
+    }
+    .cm-modal-body p{
+        font-size: 14px;
+    }
+    .cm-modal-body ul li{
+        font-size: 14px;
+    }
+    .cm-section-modal .cm-model-header .linerCard .careerHead h6{
+        font-size: 25px;
+        margin-bottom: 6px;
+    }
+
+    .cm-section-modal .linerCard .careerHead ul li{
+        font-size: 14px;
+    }
+    .cm-section-modal .cm-model-header .linerCard .careerHead p{
         display: none;
     }
-    ul.main-nav > li > a.mega-menu > span:after{
+    .opportunitiesSection .linerCard .applyBtn a{
+        padding: 10px 0px;
+        max-width: 120px;
+        font-size: 12px;
+    }
+    .opportunitiesSection .linerCard .careerHead h6{
+        font-size: 25px;
+    }
+    .opportunitiesSection .linerCard .careerHead ul li{
+        font-size: 14px;
+    }
+    .Service-detail-page .serDpara p{
+        width: 100%;
+    }
+    .Service-detail-page .fullPara p{
+        width: 100%;
+    }
+    .serDetailImg {
+        margin-top: 40px;
+        text-align: center;
+    }
+    .Service-detail-page .tri-2{
+        right: 7%;
+        top: 100px;
+    }
+    .Service-detail-page .tri-4{
+        right: 8%;
+    }
+    .Service-detail-page .tri-5{
+        left: 10%;
+    }
+    .LeadershipSection .tri-1{
+        top: 10px;
+    }
+    .servicesPage .tri-2{
+        right: 50px;
+    }
+    .servicesPage .tri-3{
+        top: 70px;
+    }
+    .LeadershipSection .tri-4{
+        left: 3%;
+    }
+    .aboutPage1 .tri-3{
+        top:86%;
+    }
+    .topHeader .right-section div.Number1 span {
+        display: none;
+    }
+
+    .sendMessageBtn {
+        margin-bottom: 50px;
+    }
+
+    .contactForm .tri-3 {
+        top: 47%;
+        left: 80%;
+    }
+
+    .contactForm .tri-2 {
+        top: 46%;
+        left: 9%;
+    }
+
+    ul.main-nav>li ul.sub-menu-lists {
+        display: none;
+        border-bottom: 1px solid rgb(29 28 28/10%);
+        padding: 10px;
+    }
+
+    .recent-work-slider .recent-work-heading h4 span.pbSpan {
+        font-size: 30px;
+        position: relative;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .recent-work-slider {
+        padding-bottom: 105px;
+    }
+
+    ul.main-nav>li>a.mega-menu>span:after {
         width: 9px;
         height: 9px;
         position: absolute;
         right: 25px;
         top: 15px;
     }
-    .triggerBtn{
+
+    .triggerBtn {
         display: block;
         position: relative;
     }
-    .sub-menu-block {
-        padding: 0px 15px;
+
+    .slider-section .tri-1 {
+        top: 54px;
     }
-    ul.main-nav>li ul.sub-menu-lists {
-        display: none;
-        border-bottom: 1px solid rgb(29 28 28/10%);
-        padding: 10px;
-    }
-    .sub-menu-block .sub-menu-head {
-        font-size: 16px;
-        color: rgba(18, 18, 18, 0.87);
-        font-weight: 500;
-        cursor: pointer;
-    }
-    .slider-section .tri-1{
-        top:54px;
-    }
-    .slider-section .tri-4{
+
+    .slider-section .tri-4 {
         right: 40px;
         bottom: 47px;
     }
-    .slider-section .tri-3{
+
+    .slider-section .tri-3 {
         display: none;
     }
-    .slider-content-js .slick-dots{
+
+    .slider-content-js .slick-dots {
         padding-top: 0;
     }
+
     .main-services {
         padding: 40px 0px;
     }
-    .slider-heading h3{
+
+    .slider-heading h3 {
+        font-size: 34px;
+    }
+
+    .services-section-st .main-services .services-heading h3 {
         line-height: normal;
     }
-    .services-section-st .main-services .services-heading h3{
+
+    .about-section-st .main-about .about-heading h3,
+    .about-section-st .main-about .about-heading h1 {
         line-height: normal;
     }
-    .about-section-st .main-about .about-heading h3, .about-section-st .main-about .about-heading h1{
-        line-height: normal;
-    }
-    .work-process .tri-7{
+
+    .work-process .tri-7 {
         bottom: 170px;
     }
-    .work-process .tri-8{
+
+    .work-process .tri-8 {
         top: 55px;
     }
-    .main-work-title .heading-content h3{
+
+    .main-work-title .heading-content h3 {
         line-height: normal;
     }
-    .work-process .tri-9{
-        top:170px;
+
+    .work-process .tri-9 {
+        top: 170px;
     }
-    .recent-work-slider .recent-work-heading h4{
+
+    .recent-work-slider .recent-work-heading h4 {
         line-height: normal;
     }
+
     .work-process .card-main {
         padding: 20px 0px;
     }
-    .hr-line:before{
+
+    .hr-line:before {
         display: none;
     }
-    .recent-work-heading{
+
+    .recent-work-heading {
         padding-top: 10px;
     }
-    .footer-section{
+
+    .footer-section {
         padding: 40px 0px;
     }
-    .footer-copy{
+
+    .footer-copy {
         padding-top: 30px;
     }
-    .recent-work-slider .recent-work-btn a{
+
+    .recent-work-slider .recent-work-btn a {
         font-size: 14px;
         padding: 10px 13px;
     }
-    .work-slider-nav .slick-dots{
+
+    .work-slider-nav .slick-dots {
         bottom: 8.5%;
         left: calc(50% - 35px);
     }
-    .recent-work-btn{
+
+    .recent-work-btn {
         margin-bottom: 16px;
         margin-top: 16px;
     }
-    .work-slider-nav .slick-next{
+
+    .work-slider-nav .slick-next {
         left: calc(50% + 100px);
         bottom: 7.5%;
     }
-    .work-slider-nav .slick-prev{
+
+    .work-slider-nav .slick-prev {
         left: calc(50% - 120px);
         bottom: 7.5%;
     }
-    .recent-work-slider{
+
+    .recent-work-slider {
         padding-top: 0px;
     }
-    .recent-work-section{
+
+    .recent-work-section {
         margin-bottom: 0px;
     }
-    .recent-work-section .tri-12{
+
+    .recent-work-section .tri-12 {
         bottom: 80px;
     }
-    .recent-work-slider .tri-11{
+
+    .recent-work-slider .tri-11 {
         right: 0px;
     }
-    .recent-work-slider .tri-10{
+
+    .recent-work-slider .tri-10 {
         border: 30px solid #B07FFF;
         border-left: 0px solid transparent;
         border-right: 30px solid transparent;
@@ -157,7 +360,8 @@
 
     /***------MenuSiderBar-----****/
     .main-header .nav-section .nav-content .menu-list {
-        width: 350px;
+        max-width: 375px;
+        width: 100%;
         min-height: 100vh;
         box-shadow: 0px 4px 8px rgb(0 0 0 / 16%);
         background-color: #fff;
@@ -168,39 +372,46 @@
         transition: 0.5s;
         overflow: auto;
     }
+
     ::-webkit-scrollbar {
         width: 0px;
-      }
-    .main-header .nav-section .nav-content .menu-list.active{
+    }
+
+    .main-header .nav-section .nav-content .menu-list.active {
         left: 0;
     }
-    .menu-list ul.main-nav > li{
+
+    .menu-list ul.main-nav>li {
         display: block;
     }
+
     .logo-sec1 img {
         width: 85px;
     }
-    
+
     .logo-sec1 {
         padding: 20px 15px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+
     .logo-sec1 span {
         display: flex;
         align-items: center;
     }
-    ul.main-nav > li > a{
+
+    ul.main-nav>li>a {
         padding: 10px 15px;
     }
+
     .logo-sec1 .times1 {
         cursor: pointer;
         position: relative;
         width: 25px;
         height: 24px;
     }
-    
+
     .logo-sec1 .times1 i::before {
         content: "";
         position: absolute;
@@ -208,10 +419,11 @@
         left: 0;
         transform: rotate(45deg);
         width: 25px;
-        height: 3px;
+        height: 2px;
         background: #024099;
         border-radius: 3px;
     }
+
     .logo-sec1 .times1 i::after {
         content: "";
         position: absolute;
@@ -219,56 +431,78 @@
         left: 0;
         transform: rotate(-45deg);
         width: 25px;
-        height: 3px;
+        height: 2px;
         background: #024099;
         border-radius: 3px;
     }
-    ul.main-nav > li > div.sub-menu-block.subMenuList{
+
+    ul.main-nav>li>div.sub-menu-block.subMenuList {
         width: 100%;
         padding: 0px 15px;
         transition: all .3s ease-in-out;
-        box-shadow: 0 1px 1px rgb(29 28 28 / 10%);
+        box-shadow: 0px 2px 7px #1d1c1c33;
         height: 0px;
         opacity: 0;
     }
-    ul.main-nav > li > div.sub-menu-block.subMenuList.active{
+
+    ul.main-nav>li>div.sub-menu-block.subMenuList.active {
         height: 100%;
         opacity: 1;
     }
-    .sub-menu-block{
-        padding-top: 0px;
-        transition: all .3s ease-in-out;
-        box-shadow: 0 1px 1px rgb(29 28 28 / 10%);
-        height: 0px;
-        opacity: 0;
-    }
-    .sub-menu-block.active{
-        height: 100%;
-        opacity: 1;
-    }
+
     /****----ToggleSlider Overlay css-----****/
-    .sidebar-overlay{
+    .sidebar-overlay {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0,0,0,0.4);
+        background-color: rgba(0, 0, 0, 0.4);
         transition: 0.5s;
         opacity: 0;
         z-index: 1000;
         visibility: hidden;
     }
-    .sidebar-overlay.active{
+
+    .sidebar-overlay.active {
         opacity: 1;
         visibility: visible;
     }
-    .sub-menu-block.active{
-        padding: 15px;
+
+    .sub-menu-block {
+        display: none;
+        box-shadow: 0 1px 1px rgb(29 28 28 / 10%);
     }
-    ul.main-nav > li ul.sub-menu-lists > li{
+
+    .sub-menu-block.active {
+        padding-top: 0px;
+        box-shadow: 0px 2px 7px #1d1c1c33;
+        display: block;
+    }
+
+    ul.main-nav>li ul.sub-menu-lists>li {
         padding: 5px 0;
     }
+
+    ul.main-nav>li:hover>a.mega-menu span:after {
+        border-color: #E72078;
+    }
+
+    .sub-menu-block .sub-menu-head {
+        font-size: 16px;
+        color: rgba(18, 18, 18, 0.87);
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .sub-menu-block .sub-menu-head:hover {
+        color: #E72078;
+    }
+
+    ul.main-nav>li ul.sub-menu-lists.active {
+        display: block;
+    }
+
     .sub-menu-block .sub-menu-head:after {
         width: 8px;
         height: 8px;
@@ -286,14 +520,24 @@
         transform: rotate(45deg);
         transition: all .3s ease-in;
     }
-  }
-  @media only screen and (max-width: 767px) {
-    .services-section-st .card-serv{
+
+    .sub-menu-block .sub-menu-head:hover::after {
+        border-color: #E72078;
+    }
+
+    .sub-menu-block .sub-menu-head.active::after {
+        transform: rotate(-135deg);
+        top: 20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .services-section-st .card-serv {
         padding: 5px;
         min-height: auto;
         margin: 0px auto;
     }
-    .image-slider{
+    .image-slider {
         display: flex;
         justify-content: center;
     }
@@ -301,26 +545,143 @@
         max-width: 300px;
         height: 300px;
     }
-    .trigger1 span:nth-child(2) {
-        margin-top: 12px;
+    .second-Modal .cm-modal-body .pl-1{
+        padding-left: 15px !important;
     }
-    .trigger1 span:nth-child(3) {
-        margin-top: 24px;
+    .second-Modal .inputField div{
+        margin-bottom: 20px;
     }
-    .card-serv .services-icon{
+    .cm-section-modal .cm-model-header .linerCard{
+        padding: 0px 0px 20px 0px;
+    }
+    .cm-section-modal .linerCard .careerHead ul {
+        padding-left: 17px;
+    }
+    .cm-section-modal .linerCard .careerHead ul li{
+        margin: 0;
+    }
+    .cm-section-modal .linerCard .applyBtn{
+        margin-bottom: 25px;
+    }
+    .servicesPage .tri-3{
+        display: none;
+    }
+    .opportunitiesSection .tri-1{
+        left: 15%;
+    }
+    .cm-section-modal .linerCard .careerHead ul{
+        display: block;
+    }
+    .cm-section-modal .linerCard .careerHead ul li:first-child{
+        list-style-type: disc;
+    }
+    .card-leader .social-icons a{
+        width: 40px;
+        height: 40px;
+    }
+    .opportunitiesSection .linerCard .applyBtn{
+        margin-top: 20px;
+        height: auto;
+    }
+    .card-leader .social-icons a img{
+        max-width: 18px;
+    }
+    .contactF .marginLeft {
+        padding-left: 15px !important;
+    }
+    .Leader-Team .slick-prev{
+        left: calc(50% - (100px));
+        bottom: 25px;
+    }
+    .Leader-Team .slick-next{
+        left: calc(50% + (55px));
+        bottom: 25px;
+    }
+    .careerPage .tri-1{
+        bottom: 9%;
+        left: 7%;
+    }
+    .careerPage .tri-3{
+        bottom: 9%;
+    }
+    .Service-detail-page .tri-5{
+        top: 65%;
+    }
+    .Service-detail-page .tri-4{
+        right: 5%;
+        top: 34%;
+    }
+    .slider-heading h3 {
+        line-height: normal
+    }
+    .contactForm .contactF .inputField div {
+        margin-bottom: 35px;
+    }
+    .addressBox .locationArea .adHead h5{
+        margin-bottom: 0px;
+    }
+    .banner-wrap .tri-2 {
+        top: 31px;
+        left: 78%;
+    }
+    .addressBox .locationArea .adHead h5 span img {
+        width: 100%;
+        max-width: 26px;
+    }
+    .contactForm .tri-2{
+        left: 1%;
+        top: 60%;
+    }
+    .addressBox .locationArea .adHead h5{
+        font-size: 15px;
+    }
+    .addressBox .locationArea .addPlace p{
+        font-size: 18px;
+    }
+    .addressBox .locationArea .addPlace h6{
+        font-size: 18px;
+    }
+    .addressBox .locationArea .addPlace {
+        padding-left: 42px;
+    }
+    .banner-wrap .banner h4 {
+        font-size: 32px;
+    }
+
+    .banner-wrap .banner h4 span {
+        font-size: 32px;
+    }
+
+    .slider-heading h3 {
+        font-size: 34px;
+    }
+
+    .recent-work-slider .recent-work-heading h4 span.pbSpan {
+        width: auto;
+    }
+
+    .recent-work-slider .recent-work-heading h4 {
+        margin-bottom: 35px;
+    }
+
+    .card-serv .services-icon {
         padding: 20px 0px 25px 0px;
     }
-    .services-section-st{
+
+    .services-section-st {
         padding-bottom: 100px;
     }
-    .services-section-st .learnMore{
+
+    .services-section-st .learnMore {
         left: calc(50% - 68px);
         top: 30px;
     }
-    .work-process .tri-7{
+
+    .work-process .tri-7 {
         bottom: 158px;
     }
-    .work-process .tri-8{
+
+    .work-process .tri-8 {
         top: 47px;
         right: 0;
         border: 30px solid #FFB967;
@@ -329,438 +690,977 @@
         transform: rotate(261deg);
         border-top: 0px solid transparent;
     }
-    .topHeader .right-section div.Number1 span{
+
+    .topHeader .right-section div.Number1 span {
         display: inline-block;
     }
-    .topHeader .col-md-8{
+
+    .topHeader .col-md-8 {
         display: none;
     }
-    .work-process .card-main{
+
+    .work-process .card-main {
         display: flex;
     }
+
     .card-main .content-assists {
         padding-left: 39px;
         padding-top: 10px;
     }
-    .hr-line:before{
+
+    .hr-line:before {
         display: block;
         width: 1px;
         height: 75%;
         left: 3px;
     }
-    .recent-work-slider .tri-10{
+
+    .recent-work-slider .tri-10 {
         right: 38px;
         top: -50px;
     }
-    .recent-work-slider .tri-11{
+
+    .recent-work-slider .tri-11 {
         right: 30%;
         bottom: 0px;
     }
-    .recent-work-slider{
+
+    .recent-work-slider {
         padding-bottom: 0px;
     }
+
     .recent-work-section {
         margin-bottom: 40px;
     }
+
     .footermenu1 {
         margin-top: 30px;
     }
+
     .copy-right p {
         text-align: center;
         padding-bottom: 20px;
     }
-    .footer-social-icon ul{
+
+    .footer-social-icon ul {
         justify-content: center;
     }
-    .footer-social-icon ul li a{
+
+    .footer-social-icon ul li a {
         width: 40px;
         height: 40px;
     }
-    .footer-social-icon ul li a i{
+    .footer-social-icon ul li a img{
+        max-width: 18px;
+    }
+    .footer-social-icon ul li a i {
         font-size: 16px;
     }
-    .slider-section .slider1 .col-md-5{
+
+    .slider-section .slider1 .col-md-5 {
         order: 1;
     }
-    .slider-section .slider1 .col-md-7{
+
+    .slider-section .slider1 .col-md-7 {
         order: 2;
     }
+
     .slider-section .slider-img img {
         width: 63%;
         margin: auto;
     }
-    .slider-section .slider-img{
+
+    .slider-section .slider-img {
         padding-bottom: 0px;
         padding-top: 10px;
     }
-    .slider-section .slider-content{
+
+    .slider-section .slider-content {
         padding-top: 10px;
         text-align: center;
     }
-    .slider-section .tri-2{
+
+    .slider-section .tri-2 {
         display: none;
     }
-    .slider-heading h3 span:before{
+
+    .slider-heading h3 span:before {
         display: none;
     }
-    .slider-heading{
+
+    .slider-heading {
         margin-top: 8px;
     }
+
     .work-slider-nav .slider2 .col-md-4 {
         order: 3;
     }
-    .work-slider-nav .slider2 .col-md-4.col-sm-6.col-6.pr-0   {
+
+    .work-slider-nav .slider2 .col-md-4.col-sm-6.col-6.pr-0 {
         order: 1;
-    } 
-    .work-slider-nav .slider2 .col-md-4.col-sm-6.col-6   {
+    }
+
+    .work-slider-nav .slider2 .col-md-4.col-sm-6.col-6 {
         order: 2;
-    } 
-    .recent-work-section .tri-12{
+    }
+
+    .recent-work-section .tri-12 {
         top: 6px;
         left: -153px;
     }
-    .recent-work-slider .recent-work-title p{
+
+    .recent-work-slider .recent-work-title p {
         margin-top: 20px;
     }
-    .slider-section .tri-5{
+
+    .slider-section .tri-5 {
         display: none;
     }
-    .slider-section .tri-6{
+
+    .slider-section .tri-6 {
         display: none;
     }
-  }
-  @media only screen and (max-width: 576px) {
-    .nav-section .nav-content .logo-sec .logoTitle{
-        padding-left: 0px;
+
+    .trigger1 span:nth-child(2) {
+        height: 2px;
     }
+    .services-section-st.aboutPage2{
+        padding-bottom: 0px;
+    }
+    .services-section-st.servicesPage .card-serv{
+        margin: 10px auto;
+        padding: 12px;
+    }
+}
+
+@media (max-width:600px) {
     .services-section-st .card-serv {
         max-width: 325px;
     }
-    .slider-section .tri-4{
+}
+
+@media only screen and (max-width: 576px) {
+    .nav-section .nav-content .logo-sec .logoTitle {
+        padding-left: 0px;
+    }
+    .aboutPage1 .tri-1{
         display: none;
     }
-    .recent-work-slider .tri-11{
+    .uploadCv .uploadCvFiles div a{
+        padding: 11px 46px 11px 11px;
+        font-size: 14px;
+    }
+    ::-webkit-file-upload-button{
+        padding: 11px 76px 11px 11px;
+    }
+    label.fileNamec a {
+        font-size: 15px;
+    }
+    .uploadCv .uploadCvFiles{
+        flex-wrap: wrap;
+    }
+    .uploadCv .uploadCvFiles div{
+        margin-top: 15px;
+        margin-right: 10px;
+    }
+    .uploadCv .uploadCvFiles div:last-child{
+        margin-right: 0px;
+    }
+    .cm-modal-body h6{
+        font-size: 25px;
+    }
+    .cm-modal-content .container{
+        padding: 0px 15px;
+    }
+    .cm-section-modal .linerCard .careerHead ul{
+        padding-left: 0px;
+    }
+    .opportunitiesSection .linerCard .applyImg{
+        justify-content: start;
+        padding-bottom: 18px;
+    }
+    .cm-section-modal .cm-model-header .linerCard .applyImg{
+        justify-content: start;
+    }
+    .cm-section-modal .linerCard .careerHead ul li,.cm-section-modal .linerCard .careerHead ul li:first-child{
+        list-style-type: none;
+    }
+    .cm-modal-body ul{
+        padding-bottom: 20px;
+    }
+    .cm-modal-body ul li{
+        line-height: 26px;
+        margin-bottom: 7px;
+    }
+    .cm-section-modal .cm-model-header .linerCard .careerHead{
+        padding: 0px 15px;
+    }
+    .opportunitiesSection{
+        padding: 50px 0px;
+    }
+    .opportunitiesSection .careerHeading p{
+            padding-bottom: 50px;
+    }
+    .opportunitiesSection .linerCard{
+        padding: 15px;
+    }
+    .servicesPage .tri-1{
         display: none;
     }
-    .recent-work-slider{
+    .servicesPage .tri-2{
+        display: none;
+    }
+    .servicesPage .card-serv .services-title{
+        min-height: auto;
+    }
+    .LeadershipSection .tri-5{
+        display: none;
+    }
+    .Service-detail-page .tri-1{
+        display: none;
+    }
+    .careerPage .tri-2{
+        display: none;
+    }
+    .careerPage .tri-1{
+        display: none;
+    }
+    .careerPage .tri-3{
+        display: none;
+    }
+    .opportunitiesSection .tri-1{
+        display: none;
+    }
+    .Service-detail-page .tri-2{
+        display: none;
+    }
+    .Service-detail-page .tri-4{
+        display: none;
+    }
+    .Service-detail-page .tri-5{
+        display: none;
+    }
+    .Service-detail-page .tri-3{
+        display: none;
+    }
+    .Service-detail-page .serDetailtitle p{
         text-align: center;
+        font-size: 15px;
     }
-    .slider-section .slider-content{
+    .Service-detail-page .serHeading h6{
+        text-align: center;
+        font-size: 32px;
+        line-height: 35px;
+    }
+    .Service-detail-page .serDpara p{
+        text-align: center;
+        font-size: 15px;
+    }
+    .Service-detail-page .fullPara p{
+        text-align: center;
+        font-size: 15px;
+    }
+    .aboutPage1{
+        padding-bottom: 0px;
+    }
+    .Leader-Team .slick-prev{
+        left: calc(50% - (85px));
+    }
+    .Leader-Team .slick-next{
+        left: calc(50% + (40px));
+        bottom: 25px;
+    }
+    .aboutPage1 .tri-2{
+        display: none;
+    }
+    .aboutPage1 .tri-3{
+        display: none;
+    }
+    .LeadershipSection .tri-1{
+       display: none;
+    }
+    .leader-title{
+        min-height: auto;
+    }
+    
+    .LeadershipSection .tri-4{
+        display: none;
+    }
+    .LeadershipSection .tri-2{
+        display: none;
+    }
+    .banner-wrap .tri-1 {
+        display: none;
+    }
+
+    .banner-wrap .tri-2 {
+        display: none;
+    }
+    .contactForm .tri-3 {
+        top: 43%;
+        left: 80%;
+    }
+    .contactForm .tri-2{
+        display: none;
+    }
+    .sendMessageBtn a{
+        max-width: 230px;
+    }
+    .banner-wrap .tri-3 {
+        display: none;
+    }
+
+    .recent-work-slider .recent-work-heading h4 span.pbSpan {
+        display: inline-block;
+    }
+
+    .recent-work-slider .recent-work-heading h4 span.pbSpan img {
+        max-width: 193px;
+        width: auto;
+    }
+
+    .slider-section .slider-content {
         padding-top: 25px;
+    }
+    .LeadershipSection .LeadershipTitle p{
+        text-align: center;
+        font-size: 15px;
+    }
+    .LeadershipSection .LeadershipHeading h5{
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    .LeadershipSection .LeadershipPara p
+    {
+        text-align: center;
+        font-size: 15px;
+    }
+    .LeadershipSection .card-leader{
+        max-width: 325px;
+        margin: auto;
     }
     .main-header .logo-sec img {
         max-width: 100%;
         width: 100px;
     }
-    .work-process .tri-7{
-        top: 25px;
+
+    .work-process .tri-7 {
+        top: 5px;
         bottom: 0px;
     }
-    .triggerBtn .trigger1 span {
-        height: 2.5px;
+
+    .work-process .tri-8 {
+        display: none;
     }
-    .work-process .tri-8{
-        right: 50px;
+    .main-work-title{
+        text-align: center;
     }
-    .work-process .tri-9{
+    .work-process .tri-9 {
         top: 255px;
     }
-    .recent-work-slider .tri-11{
-        bottom: 0px;
+
+    .recent-work-slider .tri-11 {
+        display: none;
     }
-    .recent-work-section .recent-work-login{
+
+    .recent-work-section .recent-work-login {
         margin-top: 30px;
     }
-    .recent-work-section .tri-12{
+
+    .recent-work-section .tri-12 {
         bottom: 7px;
         display: none;
     }
-    .footer-right-side ul{
+
+    .footer-right-side ul {
         padding-left: 0px;
     }
-    .footer-section{
+
+    .footer-section {
         padding-bottom: 30px;
     }
-    .slider-heading h3{
+
+    .slider-heading h3 {
         font-size: 30px;
     }
-    .about-section-st .main-about .about-heading h3, .about-section-st .main-about .about-heading h1{
+
+    .about-section-st .main-about .about-heading h3,
+    .about-section-st .main-about .about-heading h1 {
         font-size: 30px;
         margin-top: 12px;
     }
-    .services-section-st .main-services .services-heading h3{
+
+    .services-section-st .main-services .services-heading h3 {
         font-size: 30px;
         margin-top: 12px;
     }
-    .card-serv .services-title h5{
+
+    .card-serv .services-title h5 {
         font-size: 25px;
     }
-    .main-work-title .heading-content h3{
+
+    .main-work-title .heading-content h3 {
         font-size: 30px;
         margin-top: 12px;
     }
-    .card-main .content-assists{
+    .main-work-title .heading-content h3 br{
+        display: none;
+    }
+    .card-main .content-assists {
         padding-left: 27px;
     }
-    .recent-work-slider .recent-work-heading h4{
+
+    .recent-work-slider .recent-work-heading h4 {
         font-size: 30px;
         margin-top: 12px;
+        text-align: center;
     }
-    .services-section-st{
+    .recent-work-slider{
+        text-align: center;
+    }
+    .services-section-st {
         padding-bottom: 90px;
     }
-    .services-section-st .learnMore{
+
+    .services-section-st .learnMore {
         top: 16px;
     }
-    .main-work-title .heading-content{
+
+    .main-work-title .heading-content {
         padding-bottom: 30px;
     }
-    .work-process .tri-9{
+
+    .work-process .tri-9 {
         top: 215px;
     }
-    .about-section-st .main-about .about-btn a:hover span{
+
+    .about-section-st .main-about .about-btn a:hover span {
         padding-left: 5px;
     }
-    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
+
+    .container,
+    .container-fluid,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
         padding-left: 25px;
         padding-right: 25px;
     }
-    .slider-content .slider-btn a{
+
+    .slider-content .slider-btn a {
         padding: 8px 20px;
         font-size: 14px;
     }
-    .recent-work-slider .recent-work-btn a{
+
+    .recent-work-slider .recent-work-btn a {
         padding: 5px 16px;
     }
-    .slider-section .tri-2{
+
+    .slider-section .tri-2 {
         border: 30px solid #80ABFF;
         border-left: 0px solid transparent;
         border-right: 30px solid transparent;
         transform: rotate(285deg);
         border-top: 0px solid transparent;
     }
-    .slider-section .tri-1{
+
+    .slider-section .tri-1 {
         display: none;
     }
-  }
-  @media only screen and (max-width: 400px) {
-    .main-header .logo-sec img{
+
+    .footer-center .second-menu h6 {
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .footer-right-side h6 {
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .footer-middle-side h6 {
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .footer-middle-side .footer-middle-menu {
+        display: block;
+    }
+
+    .footermenu1 {
+        margin-top: 10px;
+    }
+
+    .slider-section .tri-4 {
+        display: none;
+    }
+
+    .triggerBtn .trigger1 span {
+        height: 2px;
+    }
+
+    .trigger1 span:nth-child(2) {
+        height: 1px;
+    }
+    .cm-modal-content{
+        padding: 20px;
+    }
+    .cm-model-box{
+        margin: 1rem 1rem;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .main-header .logo-sec img {
         width: 80px;
     }
-    .triggerBtn .trigger1{
-        width: 25px;
-        height: 20px;
+    .second-Modal .main-Heading-con h6{
+        font-size: 25px;
     }
-    .topHeader .right-section div img{
-        width: 18px;
-        height: 18px;
+    .opportunitiesSection .careerHeading p{
+        padding-bottom: 20px;
+    }
+    .opportunitiesSection{
+        padding-top: 20px;
+    }
+    .second-Modal .cm-modal-body .uploadCv h6{
+        padding-bottom: 0px;
+        padding-top: 20px;
+        font-size: 14px;
     }
     #animationSlider{
         height: 270px;
     }
-    .trigger1 span:nth-child(2){
+    .uploadCv .uploadCvFiles div span{
+        right: 7px;
+    }
+    .uploadCv .uploadCvFiles div span img{
+        max-width: 18px;
+    }
+    .second-Modal .inputField input{
+        height: 35px;
+    }
+    .second-Modal .inputField div span img{
+        max-width: 16px;
+    }
+    .second-Modal .inputField div span{
+        right: 12px;
+        top: 4px;
+    }
+    .second-Modal .textareaBox span img{
+        max-width: 16px;
+    }
+    .second-Modal .textareaBox span {
+        right: 12px;
+        top: 4px;
+    }
+    .cm-section-modal .linerCard .applyBtn{
+        justify-content: center;
+    }
+    .opportunitiesSection .linerCard .applyImg{
+        justify-content: center;
+    }
+    .opportunitiesSection .linerCard .careerHead h6{
+        text-align: center;
+    }
+    .opportunitiesSection .linerCard .applyBtn{
+        justify-content: center;
+    }
+    .opportunitiesSection .linerCard .careerHead ul{
+        display: block;
+        text-align: center;
+    }
+    .opportunitiesSection .linerCard .careerHead ul li{
+        list-style-type: none;
+    }
+    .card-leader .social-icons a{
+        width: 35px;
+        height: 35px;
+    }
+    .card-leader .social-icons a img{
+        max-width: 17px;
+    }
+    .Leader-Team .slick-arrow{
+        width: 40px;
+        height: 40px;
+    }
+    .Service-detail-page .serDetailtitle p{
+        font-size: 14px;
+    }
+    .Service-detail-page .serHeading h6{
+        font-size: 28px;
+    }
+    .Service-detail-page .serDpara p{
+        font-size: 14px;
+    }
+    .Service-detail-page .fullPara p{
+        font-size: 14px;
+    }
+    .Leader-Team .slick-next:before{
+        line-height: 50px;
+    }
+    .Leader-Team .slick-prev:before{
+        line-height: 50px;
+    }
+    .Leader-Team .slick-next{
+        left: calc(50% + (30px));
+    }
+    .Leader-Team .slick-prev{
+        left: calc(50% - (60px));
+    }
+    .banner-wrap .banner h4 {
+        font-size: 24px;
+    }
+    .addressBox .locationArea .addPlace {
+        padding-left: 38px;
+    }
+    .banner-wrap .banner h4 span {
+        font-size: 25px;
+    }
+    .contactForm .tri-1{
+        display: none;
+    }
+    .banner-wrap {
+        background-position: right top;
+    }
+    .banner-wrap.servicePagebanner {
+        background-position: center center;
+    }
+    .contactForm .contactF {
+        padding-top: 0px;
+    }
+    .contactForm .contactF .inputField div {
+        margin-bottom: 25px;
+    }
+    .banner-wrap .banner p {
+        margin-bottom: 0px;
+        font-size: 14px;
+    }
+    .servicesHeading{
+        margin-top: 35px;
+        margin-bottom: 10px;
+    }
+    .servicesBtn div a{
+        font-size: 14px;
+        padding: 8px 12px;
+        border-radius: 6px;
+    }
+    .contactForm .tri-3{
+        display: none;
+    }
+    .sendMessageBtn a{
+        font-size: 14px;
+        padding: 12px 0px;
+    }
+    .addressBox .locationArea .adHead h5 span img{
+        max-width: 22px;
+    }
+    .addressBox .locationArea .addPlace p{
+        font-size: 16px;
+    }
+    .addressBox .locationArea .addPlace p{
+        font-size: 14px;
+    }
+    .addressBox .locationArea .addPlace h6 {
+        font-size: 16px;
+    }
+    .contactForm .contactF .inputField input {
+        height: 35px;
+    }
+    .form-control::placeholder{
+        font-size: 14px;
+    }
+    .contactForm .contactF .inputField div span img {
+        max-width: 16px;
+    }
+    .contactForm .contactF .inputField div span {
+        right: 12px;
+        top: 4px;
+    }
+    .slider-section .slider-img img {
+        width: 100%;
+    }
+    .contactForm .contactF .textareaBox span img {
+        max-width: 16px;
+    }
+    .contactForm .contactF textarea{
+        padding: 0.375rem 0.75rem;
+    }
+    .contactForm .contactF .textareaBox span{
+        top: 7px;
+        right: 12px;
+    }
+    .trigger1 span:nth-child(2) {
+        height: 2px;
+    }
+
+    .triggerBtn .trigger1 {
+        width: 25px;
+        height: 20px;
+    }
+
+    .topHeader .right-section div img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .trigger1 span:nth-child(2) {
         margin-top: 8px;
     }
-    .trigger1 span:nth-child(3){
+
+    .trigger1 span:nth-child(3) {
         margin-top: 16px;
     }
-    .slider-content .slider-para p{
+
+    .slider-content .slider-para p {
         font-size: 14px;
     }
-    .slider-heading h3{
+
+    .slider-heading h3 {
         font-size: 28px;
     }
-    .about-section-st .main-about .about-content{
+
+    .about-section-st .main-about .about-content {
         font-size: 14px;
     }
-    .about-section-st .main-about .about-heading h3, .about-section-st .main-about .about-heading h1{
+
+    .about-section-st .main-about .about-heading h3,
+    .about-section-st .main-about .about-heading h1 {
         font-size: 28px;
     }
-    .about-section-st .main-about .about-para p{
+
+    .about-section-st .main-about .about-para p {
         font-size: 14px;
         line-height: 24px;
     }
-    .about-section-st .main-about .about-btn a{
+
+    .about-section-st .main-about .about-btn a {
         margin-top: 16px;
     }
-    .services-section-st .main-services .services-content{
+
+    .services-section-st .main-services .services-content {
         font-size: 14px;
     }
-    .services-section-st .main-services .services-heading h3
-    {
+
+    .services-section-st .main-services .services-heading h3 {
         font-size: 28px;
     }
-    .card-serv .services-title h5{
+
+    .card-serv .services-title h5 {
         font-size: 23px;
     }
-    .service-content-para p{
+
+    .service-content-para p {
         font-size: 14px;
         line-height: 27px;
     }
-    .work-process .para-content p{
+
+    .work-process .para-content p {
         font-size: 14px;
     }
-    .main-work-title .heading-content h3
-    {
+
+    .main-work-title .heading-content h3 {
         font-size: 28px;
     }
-    .card-main .card-head h5{
+
+    .card-main .card-head h5 {
         font-size: 20px;
     }
-    .card-main .content-assists{
+
+    .card-main .content-assists {
         padding-left: 18px;
     }
-    .card-main .card-para p{
+
+    .card-main .card-para p {
         padding-top: 10px;
         font-size: 14px;
         line-height: 26px;
     }
-    .card-main .card-number div{
+
+    .card-main .card-number div {
         width: 44px;
         height: 44px;
         font-size: 20px;
     }
-    .card-main .card-number div span{
+
+    .card-main .card-number div span {
         width: 44px;
         height: 44px;
     }
+
     @keyframes border-pulse1 {
         0% {
             width: 48px;
             height: 48px;
             border: 1.5px solid #E72078;
         }
+
         100% {
             width: 70px;
             height: 70px;
             border: 1.5px solid #e7207800;
         }
     }
-    .recent-work-slider .recent-work-title p{
+
+    .recent-work-slider .recent-work-title p {
         font-size: 14px;
     }
-    .recent-work-heading{
+
+    .recent-work-heading {
         padding-top: 0px;
     }
-    .recent-work-slider .recent-work-heading h4{
+
+    .recent-work-slider .recent-work-heading h4 {
         font-size: 28px;
     }
-    .recent-work-para p{
+
+    .recent-work-para p {
         font-size: 14px;
         line-height: 26px;
     }
-    .footer-logo img{
+
+    .footer-logo img {
         width: 100px;
     }
-    .footer-logo{
+
+    .footer-logo {
         padding-bottom: 15px;
     }
-    .footer-left-side .footer-head h5{
+
+    .footer-left-side .footer-head h5 {
         font-size: 22px;
     }
-    .footer-address p{
+
+    .footer-address p {
         font-size: 14px;
     }
-    .footer-phone p{
+
+    .footer-phone p {
         font-size: 14px;
     }
-    .footer-phone{
+
+    .footer-phone {
         padding-top: 6px;
     }
-    .footer-middle-side .footer-middle-menu{
+
+    .footer-middle-side .footer-middle-menu {
         display: block;
         margin-bottom: 10px;
     }
-    .footer-middle-side h6{
-        margin-bottom:5px;
+
+    .footer-middle-side h6 {
+        margin-bottom: 5px;
     }
-    .footer-middle-menu ul li a{
+
+    .footer-middle-menu ul li a {
         font-size: 14px;
         line-height: 28px;
     }
-    .footer-center{
+
+    .footer-center {
         margin-bottom: 10px;
     }
-    .footer-center .second-menu h6{
+
+    .footer-center .second-menu h6 {
         margin-bottom: 5px;
     }
-    .footer-center .second-menu li a{
+
+    .footer-center .second-menu li a {
         font-size: 14px;
         line-height: 28px;
     }
-    .footer-right-side h6{
+
+    .footer-right-side h6 {
         margin-bottom: 5px;
     }
-    .footer-right-side ul li a{
+
+    .footer-right-side ul li a {
         font-size: 14px;
         line-height: 28px;
     }
-    .footer-copy{
+
+    .footer-copy {
         padding-top: 25px;
     }
-    .copy-right p{
+
+    .copy-right p {
         font-size: 14px;
         padding-bottom: 10px;
     }
-    .footer-social-icon ul li a{
+
+    .footer-social-icon ul li a {
         width: 35px;
         height: 35px;
     }
-    .footer-social-icon ul li a i{
+    .footer-social-icon ul li a img{
+        max-width: 15px;
+    }
+    .footer-social-icon ul li a i {
         font-size: 14px;
     }
-    .work-process .tri-9{
-        top: 417%;
+
+    .work-process .tri-9 {
+        display: none;
     }
-    .work-process .tri-8{
+
+    .work-process .tri-8 {
         top: 200%;
         right: 65px;
     }
-    .work-process .tri-7{
+
+    .work-process .tri-7 {
         left: 50%;
     }
-  }
-  @media only screen and (max-width: 340px) {
-    .topHeader .right-section div img{
+}
+
+@media only screen and (max-width: 340px) {
+    .topHeader .right-section div img {
         width: 16px;
         height: 16px;
     }
-    .topHeader .right-section div a{
+
+    .topHeader .right-section div a {
         font-size: 11px;
     }
-    .nav-section .nav-content .logo-sec .logoTitle{
+
+    .nav-section .nav-content .logo-sec .logoTitle {
         font-size: 20px;
     }
-    .main-header .logo-sec img{
+
+    .main-header .logo-sec img {
         width: 65px;
     }
-    .triggerBtn .trigger1{
+
+    .triggerBtn .trigger1 {
         width: 20px;
         height: 17px;
     }
-    .triggerBtn .trigger1 span{
-        height: 3px;
-    }
-    .slider-section .tri-1{
+
+    .slider-section .tri-1 {
         top: 20px;
     }
-    .slider-content .slider-btn a{
+
+    .slider-content .slider-btn a {
         padding: 6px 11px;
         font-size: 11px;
     }
-    .recent-work-slider .tri-10{
+
+    .recent-work-slider .tri-10 {
         right: 18px;
         top: 0px;
     }
-    .recent-work-slider .recent-work-btn a{
+
+    .recent-work-slider .recent-work-btn a {
         font-size: 11px;
     }
-    .work-process .tri-8{
+
+    .work-process .tri-8 {
         right: 22px;
     }
-    .work-process .tri-9{
+
+    .work-process .tri-9 {
         top: 451%;
         left: 85%;
     }
-  }
-
+}

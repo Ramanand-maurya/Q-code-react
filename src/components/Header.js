@@ -67,7 +67,11 @@ const Navbar = () => {
                     MenuItemData.map((menuVal, Ind) => {
                       return (
                         <li className={`top-level-link ${menuVal.SubMenu ? "position-relative" : ""}`} key={Ind}>
-                          <NavLink activeclassname="current" to={menuVal.MenuItemLink} className={` ${menuVal.MegaMenu || menuVal.SubMenu ? "mega-menu" : ""}`} onClick={() => OpenMenuActive(Ind)}><span>{menuVal.MenuItemName}</span></NavLink>
+                          {
+                            menuVal.SubMenu || menuVal.MegaMenu ? <a className={`${menuVal.MegaMenu || menuVal.SubMenu ? "mega-menu" : ""}`} onClick={() => OpenMenuActive(Ind)}><span>{menuVal.MenuItemName}</span></a> 
+                            : <NavLink activeclassname="current" to={ menuVal.MenuItemLink } onClick={() => OpenMenuActive(Ind)}><span>{menuVal.MenuItemName}</span></NavLink>
+                          }
+                          
                           {menuVal.SubMenu || menuVal.MegaMenu ?
                             <div className={`sub-menu-block ${menuVal.SubMenu ? "subMenuList" : ""} ${isActive ? "active" : ""}`}>
                             <div className="row">

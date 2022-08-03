@@ -69,7 +69,7 @@ function ContactForm(){
                             {textData.map((val,ind) =>{
                                 return(
                                     <div>
-                                        <Link className={`${active == ind ? 'active' : ''}`} onClick={() => activeBtn(ind)} to=''>{val.text}</Link>
+                                        <Link key={val.id} className={`${active == ind ? 'active' : ''}`} onClick={() => activeBtn(ind)} to=''>{val.text}</Link>
                                     </div>
                                 )
                             })}

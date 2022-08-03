@@ -1,0 +1,766 @@
+@media only screen and (min-width: 991px) {
+    .triggerBtn{
+        display: none;
+    }
+    .logo-sec1 {
+        display: none;
+    }
+    .sidebar-overlay{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .slider-section .tri-3{
+        bottom: 8px;
+    }
+    .services-section-st .card-serv{
+        min-height: 494px;
+    }
+    .recent-work-slider{
+        padding-top: 100px;
+        padding-bottom: 35px;
+    }
+    .recent-work-para{
+        padding-top: 0px;
+    }
+    .recent-work-slider .tri-11{
+        bottom: 100px;
+    }
+    .card-main .card-head h5{
+        font-size: 22px;
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    .topHeader .right-section div.Number1 span{
+        display: none;
+    }
+    ul.main-nav > li > a.mega-menu > span:after{
+        width: 9px;
+        height: 9px;
+        position: absolute;
+        right: 25px;
+        top: 15px;
+    }
+    .triggerBtn{
+        display: block;
+        position: relative;
+    }
+    .sub-menu-block {
+        padding: 0px 15px;
+    }
+    ul.main-nav>li ul.sub-menu-lists {
+        display: none;
+        border-bottom: 1px solid rgb(29 28 28/10%);
+        padding: 10px;
+    }
+    .sub-menu-block .sub-menu-head {
+        font-size: 16px;
+        color: rgba(18, 18, 18, 0.87);
+        font-weight: 500;
+        cursor: pointer;
+    }
+    .slider-section .tri-1{
+        top:54px;
+    }
+    .slider-section .tri-4{
+        right: 40px;
+        bottom: 47px;
+    }
+    .slider-section .tri-3{
+        display: none;
+    }
+    .slider-content-js .slick-dots{
+        padding-top: 0;
+    }
+    .main-services {
+        padding: 40px 0px;
+    }
+    .slider-heading h3{
+        line-height: normal;
+    }
+    .services-section-st .main-services .services-heading h3{
+        line-height: normal;
+    }
+    .about-section-st .main-about .about-heading h3, .about-section-st .main-about .about-heading h1{
+        line-height: normal;
+    }
+    .work-process .tri-7{
+        bottom: 170px;
+    }
+    .work-process .tri-8{
+        top: 55px;
+    }
+    .main-work-title .heading-content h3{
+        line-height: normal;
+    }
+    .work-process .tri-9{
+        top:170px;
+    }
+    .recent-work-slider .recent-work-heading h4{
+        line-height: normal;
+    }
+    .work-process .card-main {
+        padding: 20px 0px;
+    }
+    .hr-line:before{
+        display: none;
+    }
+    .recent-work-heading{
+        padding-top: 10px;
+    }
+    .footer-section{
+        padding: 40px 0px;
+    }
+    .footer-copy{
+        padding-top: 30px;
+    }
+    .recent-work-slider .recent-work-btn a{
+        font-size: 14px;
+        padding: 10px 13px;
+    }
+    .work-slider-nav .slick-dots{
+        bottom: 8.5%;
+        left: calc(50% - 35px);
+    }
+    .recent-work-btn{
+        margin-bottom: 16px;
+        margin-top: 16px;
+    }
+    .work-slider-nav .slick-next{
+        left: calc(50% + 100px);
+        bottom: 7.5%;
+    }
+    .work-slider-nav .slick-prev{
+        left: calc(50% - 120px);
+        bottom: 7.5%;
+    }
+    .recent-work-slider{
+        padding-top: 0px;
+    }
+    .recent-work-section{
+        margin-bottom: 0px;
+    }
+    .recent-work-section .tri-12{
+        bottom: 80px;
+    }
+    .recent-work-slider .tri-11{
+        right: 0px;
+    }
+    .recent-work-slider .tri-10{
+        border: 30px solid #B07FFF;
+        border-left: 0px solid transparent;
+        border-right: 30px solid transparent;
+        transform: rotate(352deg);
+        border-top: 0px solid transparent;
+    }
+
+    /***------MenuSiderBar-----****/
+    .main-header .nav-section .nav-content .menu-list {
+        width: 350px;
+        min-height: 100vh;
+        box-shadow: 0px 4px 8px rgb(0 0 0 / 16%);
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 1001;
+        transition: 0.5s;
+        overflow: auto;
+    }
+    ::-webkit-scrollbar {
+        width: 0px;
+      }
+    .main-header .nav-section .nav-content .menu-list.active{
+        left: 0;
+    }
+    .menu-list ul.main-nav > li{
+        display: block;
+    }
+    .logo-sec1 img {
+        width: 85px;
+    }
+    
+    .logo-sec1 {
+        padding: 20px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo-sec1 span {
+        display: flex;
+        align-items: center;
+    }
+    ul.main-nav > li > a{
+        padding: 10px 15px;
+    }
+    .logo-sec1 .times1 {
+        cursor: pointer;
+        position: relative;
+        width: 25px;
+        height: 24px;
+    }
+    
+    .logo-sec1 .times1 i::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 0;
+        transform: rotate(45deg);
+        width: 25px;
+        height: 3px;
+        background: #024099;
+        border-radius: 3px;
+    }
+    .logo-sec1 .times1 i::after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 0;
+        transform: rotate(-45deg);
+        width: 25px;
+        height: 3px;
+        background: #024099;
+        border-radius: 3px;
+    }
+    ul.main-nav > li > div.sub-menu-block.subMenuList{
+        width: 100%;
+        padding: 0px 15px;
+        transition: all .3s ease-in-out;
+        box-shadow: 0 1px 1px rgb(29 28 28 / 10%);
+        height: 0px;
+        opacity: 0;
+    }
+    ul.main-nav > li > div.sub-menu-block.subMenuList.active{
+        height: 100%;
+        opacity: 1;
+    }
+    .sub-menu-block{
+        padding-top: 0px;
+        transition: all .3s ease-in-out;
+        box-shadow: 0 1px 1px rgb(29 28 28 / 10%);
+        height: 0px;
+        opacity: 0;
+    }
+    .sub-menu-block.active{
+        height: 100%;
+        opacity: 1;
+    }
+    /****----ToggleSlider Overlay css-----****/
+    .sidebar-overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.4);
+        transition: 0.5s;
+        opacity: 0;
+        z-index: 1000;
+        visibility: hidden;
+    }
+    .sidebar-overlay.active{
+        opacity: 1;
+        visibility: visible;
+    }
+    .sub-menu-block.active{
+        padding: 15px;
+    }
+    ul.main-nav > li ul.sub-menu-lists > li{
+        padding: 5px 0;
+    }
+    .sub-menu-block .sub-menu-head:after {
+        width: 8px;
+        height: 8px;
+        content: "";
+        top: 14px;
+        right: 25px;
+        position: absolute;
+        background-color: transparent;
+        display: inline-block;
+        margin-left: 10px;
+        border: 1px solid rgba(18, 18, 18, 0.87);
+        border-top: none;
+        border-left: none;
+        margin-bottom: 2px;
+        transform: rotate(45deg);
+        transition: all .3s ease-in;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .services-section-st .card-serv{
+        padding: 5px;
+        min-height: auto;
+        margin: 0px auto;
+    }
+    .image-slider{
+        display: flex;
+        justify-content: center;
+    }
+    #animationSlider{
+        max-width: 300px;
+        height: 300px;
+    }
+    .trigger1 span:nth-child(2) {
+        margin-top: 12px;
+    }
+    .trigger1 span:nth-child(3) {
+        margin-top: 24px;
+    }
+    .card-serv .services-icon{
+        padding: 20px 0px 25px 0px;
+    }
+    .services-section-st{
+        padding-bottom: 100px;
+    }
+    .services-section-st .learnMore{
+        left: calc(50% - 68px);
+        top: 30px;
+    }
+    .work-process .tri-7{
+        bottom: 158px;
+    }
+    .work-process .tri-8{
+        top: 47px;
+        right: 0;
+        border: 30px solid #FFB967;
+        border-left: 0px solid transparent;
+        border-right: 30px solid transparent;
+        transform: rotate(261deg);
+        border-top: 0px solid transparent;
+    }
+    .topHeader .right-section div.Number1 span{
+        display: inline-block;
+    }
+    .topHeader .col-md-8{
+        display: none;
+    }
+    .work-process .card-main{
+        display: flex;
+    }
+    .card-main .content-assists {
+        padding-left: 39px;
+        padding-top: 10px;
+    }
+    .hr-line:before{
+        display: block;
+        width: 1px;
+        height: 75%;
+        left: 3px;
+    }
+    .recent-work-slider .tri-10{
+        right: 38px;
+        top: -50px;
+    }
+    .recent-work-slider .tri-11{
+        right: 30%;
+        bottom: 0px;
+    }
+    .recent-work-slider{
+        padding-bottom: 0px;
+    }
+    .recent-work-section {
+        margin-bottom: 40px;
+    }
+    .footermenu1 {
+        margin-top: 30px;
+    }
+    .copy-right p {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .footer-social-icon ul{
+        justify-content: center;
+    }
+    .footer-social-icon ul li a{
+        width: 40px;
+        height: 40px;
+    }
+    .footer-social-icon ul li a i{
+        font-size: 16px;
+    }
+    .slider-section .slider1 .col-md-5{
+        order: 1;
+    }
+    .slider-section .slider1 .col-md-7{
+        order: 2;
+    }
+    .slider-section .slider-img img {
+        width: 63%;
+        margin: auto;
+    }
+    .slider-section .slider-img{
+        padding-bottom: 0px;
+        padding-top: 10px;
+    }
+    .slider-section .slider-content{
+        padding-top: 10px;
+        text-align: center;
+    }
+    .slider-section .tri-2{
+        display: none;
+    }
+    .slider-heading h3 span:before{
+        display: none;
+    }
+    .slider-heading{
+        margin-top: 8px;
+    }
+    .work-slider-nav .slider2 .col-md-4 {
+        order: 3;
+    }
+    .work-slider-nav .slider2 .col-md-4.col-sm-6.col-6.pr-0   {
+        order: 1;
+    } 
+    .work-slider-nav .slider2 .col-md-4.col-sm-6.col-6   {
+        order: 2;
+    } 
+    .recent-work-section .tri-12{
+        top: 6px;
+        left: -153px;
+    }
+    .recent-work-slider .recent-work-title p{
+        margin-top: 20px;
+    }
+    .slider-section .tri-5{
+        display: none;
+    }
+    .slider-section .tri-6{
+        display: none;
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    .nav-section .nav-content .logo-sec .logoTitle{
+        padding-left: 0px;
+    }
+    .services-section-st .card-serv {
+        max-width: 325px;
+    }
+    .slider-section .tri-4{
+        display: none;
+    }
+    .recent-work-slider .tri-11{
+        display: none;
+    }
+    .recent-work-slider{
+        text-align: center;
+    }
+    .slider-section .slider-content{
+        padding-top: 25px;
+    }
+    .main-header .logo-sec img {
+        max-width: 100%;
+        width: 100px;
+    }
+    .work-process .tri-7{
+        top: 25px;
+        bottom: 0px;
+    }
+    .triggerBtn .trigger1 span {
+        height: 2.5px;
+    }
+    .work-process .tri-8{
+        right: 50px;
+    }
+    .work-process .tri-9{
+        top: 255px;
+    }
+    .recent-work-slider .tri-11{
+        bottom: 0px;
+    }
+    .recent-work-section .recent-work-login{
+        margin-top: 30px;
+    }
+    .recent-work-section .tri-12{
+        bottom: 7px;
+        display: none;
+    }
+    .footer-right-side ul{
+        padding-left: 0px;
+    }
+    .footer-section{
+        padding-bottom: 30px;
+    }
+    .slider-heading h3{
+        font-size: 30px;
+    }
+    .about-section-st .main-about .about-heading h3, .about-section-st .main-about .about-heading h1{
+        font-size: 30px;
+        margin-top: 12px;
+    }
+    .services-section-st .main-services .services-heading h3{
+        font-size: 30px;
+        margin-top: 12px;
+    }
+    .card-serv .services-title h5{
+        font-size: 25px;
+    }
+    .main-work-title .heading-content h3{
+        font-size: 30px;
+        margin-top: 12px;
+    }
+    .card-main .content-assists{
+        padding-left: 27px;
+    }
+    .recent-work-slider .recent-work-heading h4{
+        font-size: 30px;
+        margin-top: 12px;
+    }
+    .services-section-st{
+        padding-bottom: 90px;
+    }
+    .services-section-st .learnMore{
+        top: 16px;
+    }
+    .main-work-title .heading-content{
+        padding-bottom: 30px;
+    }
+    .work-process .tri-9{
+        top: 215px;
+    }
+    .about-section-st .main-about .about-btn a:hover span{
+        padding-left: 5px;
+    }
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .slider-content .slider-btn a{
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+    .recent-work-slider .recent-work-btn a{
+        padding: 5px 16px;
+    }
+    .slider-section .tri-2{
+        border: 30px solid #80ABFF;
+        border-left: 0px solid transparent;
+        border-right: 30px solid transparent;
+        transform: rotate(285deg);
+        border-top: 0px solid transparent;
+    }
+    .slider-section .tri-1{
+        display: none;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .main-header .logo-sec img{
+        width: 80px;
+    }
+    .triggerBtn .trigger1{
+        width: 25px;
+        height: 20px;
+    }
+    .topHeader .right-section div img{
+        width: 18px;
+        height: 18px;
+    }
+    #animationSlider{
+        height: 270px;
+    }
+    .trigger1 span:nth-child(2){
+        margin-top: 8px;
+    }
+    .trigger1 span:nth-child(3){
+        margin-top: 16px;
+    }
+    .slider-content .slider-para p{
+        font-size: 14px;
+    }
+    .slider-heading h3{
+        font-size: 28px;
+    }
+    .about-section-st .main-about .about-content{
+        font-size: 14px;
+    }
+    .about-section-st .main-about .about-heading h3, .about-section-st .main-about .about-heading h1{
+        font-size: 28px;
+    }
+    .about-section-st .main-about .about-para p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .about-section-st .main-about .about-btn a{
+        margin-top: 16px;
+    }
+    .services-section-st .main-services .services-content{
+        font-size: 14px;
+    }
+    .services-section-st .main-services .services-heading h3
+    {
+        font-size: 28px;
+    }
+    .card-serv .services-title h5{
+        font-size: 23px;
+    }
+    .service-content-para p{
+        font-size: 14px;
+        line-height: 27px;
+    }
+    .work-process .para-content p{
+        font-size: 14px;
+    }
+    .main-work-title .heading-content h3
+    {
+        font-size: 28px;
+    }
+    .card-main .card-head h5{
+        font-size: 20px;
+    }
+    .card-main .content-assists{
+        padding-left: 18px;
+    }
+    .card-main .card-para p{
+        padding-top: 10px;
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .card-main .card-number div{
+        width: 44px;
+        height: 44px;
+        font-size: 20px;
+    }
+    .card-main .card-number div span{
+        width: 44px;
+        height: 44px;
+    }
+    @keyframes border-pulse1 {
+        0% {
+            width: 48px;
+            height: 48px;
+            border: 1.5px solid #E72078;
+        }
+        100% {
+            width: 70px;
+            height: 70px;
+            border: 1.5px solid #e7207800;
+        }
+    }
+    .recent-work-slider .recent-work-title p{
+        font-size: 14px;
+    }
+    .recent-work-heading{
+        padding-top: 0px;
+    }
+    .recent-work-slider .recent-work-heading h4{
+        font-size: 28px;
+    }
+    .recent-work-para p{
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .footer-logo img{
+        width: 100px;
+    }
+    .footer-logo{
+        padding-bottom: 15px;
+    }
+    .footer-left-side .footer-head h5{
+        font-size: 22px;
+    }
+    .footer-address p{
+        font-size: 14px;
+    }
+    .footer-phone p{
+        font-size: 14px;
+    }
+    .footer-phone{
+        padding-top: 6px;
+    }
+    .footer-middle-side .footer-middle-menu{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .footer-middle-side h6{
+        margin-bottom:5px;
+    }
+    .footer-middle-menu ul li a{
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .footer-center{
+        margin-bottom: 10px;
+    }
+    .footer-center .second-menu h6{
+        margin-bottom: 5px;
+    }
+    .footer-center .second-menu li a{
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .footer-right-side h6{
+        margin-bottom: 5px;
+    }
+    .footer-right-side ul li a{
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .footer-copy{
+        padding-top: 25px;
+    }
+    .copy-right p{
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    .footer-social-icon ul li a{
+        width: 35px;
+        height: 35px;
+    }
+    .footer-social-icon ul li a i{
+        font-size: 14px;
+    }
+    .work-process .tri-9{
+        top: 417%;
+    }
+    .work-process .tri-8{
+        top: 200%;
+        right: 65px;
+    }
+    .work-process .tri-7{
+        left: 50%;
+    }
+  }
+  @media only screen and (max-width: 340px) {
+    .topHeader .right-section div img{
+        width: 16px;
+        height: 16px;
+    }
+    .topHeader .right-section div a{
+        font-size: 11px;
+    }
+    .nav-section .nav-content .logo-sec .logoTitle{
+        font-size: 20px;
+    }
+    .main-header .logo-sec img{
+        width: 65px;
+    }
+    .triggerBtn .trigger1{
+        width: 20px;
+        height: 17px;
+    }
+    .triggerBtn .trigger1 span{
+        height: 3px;
+    }
+    .slider-section .tri-1{
+        top: 20px;
+    }
+    .slider-content .slider-btn a{
+        padding: 6px 11px;
+        font-size: 11px;
+    }
+    .recent-work-slider .tri-10{
+        right: 18px;
+        top: 0px;
+    }
+    .recent-work-slider .recent-work-btn a{
+        font-size: 11px;
+    }
+    .work-process .tri-8{
+        right: 22px;
+    }
+    .work-process .tri-9{
+        top: 451%;
+        left: 85%;
+    }
+  }
+

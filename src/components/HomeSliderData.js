@@ -4,8 +4,8 @@ const HomeSliderData = [
         Title: "Streamline your",
         TitleSpan: "digital World",
         TitleAfterSpan:"with US",
-        SliderBtn: "Explore now",
-        SliderBtnLink: "/about",
+        SliderBtn: "Contect now",
+        SliderBtnLink: "/contact",
         Imgsrc: "https://embed.lottiefiles.com/animation/76220",
     },
     {

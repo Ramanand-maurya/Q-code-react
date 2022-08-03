@@ -451,10 +451,10 @@ font-size: 20px;
 }
 .trigger1 span:nth-child(2) {
     background: #024099;
-    margin-top: 11px;
+    margin-top: 10px;
 }
 .trigger1 span:nth-child(3) {
-    margin-top: 22px;
+    margin-top: 20px;
 }
 .triggerBtn .trigger1.active span:nth-child(2){
     opacity: 0;
@@ -643,6 +643,9 @@ font-size: 20px;
     /* Drop Down/Up Arrow for Mega Menu */
     ul.main-nav > li > a.mega-menu > span {
       display: block;
+    }
+    ul.main-nav > li:hover > a.mega-menu > span{
+        color: #E72078;
     }
     ul.main-nav > li > a.mega-menu > span:after {
         width: 10px;
@@ -982,18 +985,65 @@ ul.main-nav > li > div.sub-menu-block.subMenuList .col-lg-3{
 .services-section-st .card-serv:hover{
     box-shadow: 0px 0px 10px #bebebe91;
 }
+.servicesPage .tri-1 {
+    content: "";
+    position: absolute;
+    top: 60px;
+    width: 0;
+    left: 13%;
+    z-index: 100;
+    height: 0;
+    border: 40px solid #B07FFF;
+    border-left: 0px solid transparent;
+    border-right: 40px solid transparent;
+    transform: rotate(73deg);
+    border-top: 0px solid transparent;
+}
+.servicesPage .tri-2 {
+    content: "";
+    position: absolute;
+    top: 43px;
+    width: 0;
+    right: 175px;
+    z-index: 100;
+    height: 0;
+    border: 30px solid #FFEA7F;
+    border-left: 0px solid transparent;
+    border-right: 30px solid transparent;
+    transform: rotate(69deg);
+    border-top: 0px solid transparent;
+}
+.servicesPage .tri-3 {
+    content: "";
+    position: absolute;
+    top: 64px;
+    width: 0;
+    left: 36%;
+    z-index: 100;
+    height: 0;
+    border: 30px solid #FE6D6D;
+    border-left: 0px solid transparent;
+    border-right: 30px solid transparent;
+    transform: rotate(108deg);
+    border-top: 0px solid transparent;
+}
 .card-serv .services-icon {
     display: flex;
     justify-content: center;
     padding: 30px 0px 47px 0px;
 }
-
+.servicesPage .card-serv .services-title {
+    min-height: 76.8px;
+}
 .card-serv .services-title h5 {
     font-size: 27px;
     color: rgba(18, 18, 18, 0.87);
     font-weight: 500;
 }
-
+.services-section-st.servicesPage {
+    padding-bottom: 40px;
+    position: relative;
+}
 .card-serv .services-title h5 span {
     color: #E72078;
     font-weight: 700;
@@ -1033,6 +1083,21 @@ ul.main-nav > li > div.sub-menu-block.subMenuList .col-lg-3{
     border-bottom: 30px solid #08be26;
 }
 .card-serv .triangle-5 {
+    border-bottom: 30px solid #d20cae;
+}
+.card-serv .triangle-6 {
+    border-bottom: 30px solid #FE6D6D;
+}
+.card-serv .triangle-7 {
+    border-bottom: 30px solid #B07FFF;
+}
+.card-serv .triangle-8 {
+    border-bottom: 30px solid #b84308;
+}
+.card-serv .triangle-9 {
+    border-bottom: 30px solid #08be26;
+}
+.card-serv .triangle-10 {
     border-bottom: 30px solid #d20cae;
 }
 .slider-nav1 .slick-dots {
@@ -1291,20 +1356,22 @@ ul.main-nav > li > div.sub-menu-block.subMenuList .col-lg-3{
     font-size: 38px;
     line-height: 56px;
     font-weight: 500;
+    width: 97%;
 }
 
 .recent-work-slider .recent-work-heading h4 span {
     color: #4285F4;
     font-weight: 700;
+}
+.recent-work-slider .recent-work-heading h4 span.pbSpan {
     position: relative;
 }
-.recent-work-slider .recent-work-heading h4 span:before {
-    /* content: url(./images/vector2.png); */
+.recent-work-slider .recent-work-heading h4 span.pbSpan img {
     position: absolute;
-    top: 18px;
-    right: -12px;
+    width: 100%;
+    left: 0;
+    bottom: -13px;
 }
-
 .recent-work-slider .recent-work-heading h4 span span {
     color: #FB802A;
 }
@@ -1648,6 +1715,11 @@ ul.main-nav > li > div.sub-menu-block.subMenuList .col-lg-3{
     font-size: 38px;
     color: rgba(18, 18, 18, 0.87);
     font-weight: 500;
+}
+.banner-wrap .banner h4 span {
+    color: #E72078;
+    font-size: 38px;
+    font-weight: 700;
 }
 .banner-wrap:before {
     background: rgba(231, 32, 120, 0.05);
@@ -2041,6 +2113,127 @@ ul.main-nav > li > div.sub-menu-block.subMenuList .col-lg-3{
     transform: rotate(359deg);
     border-top: 0px solid transparent;
 }
+
+/**********service-Detail-Page***********/
+.Service-detail-page{
+    position: relative;
+}
+.Service-detail-page .serDetailtitle {
+    padding-top: 40px;
+}
+
+.Service-detail-page .serDetailtitle p {
+    color: rgba(18, 18, 18, 0.85);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.Service-detail-page .serHeading h6 {
+    color: rgba(18, 18, 18, 0.87);
+    font-size: 38px;
+    line-height: 53px;
+    font-weight: 500;
+}
+
+.Service-detail-page .serHeading h6 span {
+    font-weight: 700;
+    color: #E72078;
+}
+
+.Service-detail-page .serDpara p {
+    color: #696969;
+    font-size: 16px;
+    font-weight: 500;
+    width: 85%;
+}
+
+.Service-detail-page .fullPara p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #696969;
+    width: 92%;
+}
+
+.Service-detail-page .fullPara {
+    padding-top: 40px;
+    margin-bottom: 60px;
+}
+
+
+.Service-detail-page .tri-1 {
+    content: "";
+    position: absolute;
+    top: 36px;
+    width: 0px;
+    left: 39%;
+    z-index: 100;
+    height: 0px;
+    border-width: 0px 30px 30px 0px;
+    border-style: solid;
+    border-color: transparent transparent #FE6D6D;
+    border-image: initial;
+    transform: rotate(17deg);
+    z-index: 1;
+}
+.Service-detail-page .tri-2 {
+    content: "";
+    position: absolute;
+    top: 140px;
+    width: 0;
+    right: 17%;
+    z-index: 100;
+    height: 0;
+    border: 40px solid #FFB967;
+    border-left: 0px solid transparent;
+    border-right: 40px solid transparent;
+    transform: rotate(359deg);
+    border-top: 0px solid transparent;
+    z-index: 1;
+}
+.Service-detail-page .tri-3 {
+    content: "";
+    position: absolute;
+    top: 52%;
+    width: 0;
+    left: 46%;
+    z-index: 100;
+    height: 0;
+    border: 30px solid #FE6D6D;
+    border-left: 0px solid transparent;
+    border-right: 30px solid transparent;
+    transform: rotate(77deg);
+    border-top: 0px solid transparent;
+}
+.Service-detail-page .tri-4 {
+    content: "";
+    position: absolute;
+    top: 32%;
+    width: 0;
+    right: 15%;
+    z-index: 100;
+    height: 0;
+    border: 30px solid #FFEA7F;
+    border-left: 0px solid transparent;
+    border-right: 30px solid transparent;
+    transform: rotate(60deg);
+    border-top: 0px solid transparent;
+}
+.Service-detail-page .tri-5 {
+    content: "";
+    position: absolute;
+    top: 33%;
+    width: 0;
+    left: 10%;
+    z-index: 100;
+    height: 0;
+    border: 40px solid #B07FFF;
+    border-left: 0px solid transparent;
+    border-right: 40px solid transparent;
+    transform: rotate(52deg);
+    border-top: 0px solid transparent;
+}
+
 /**********Contact Page css***********/
 .contactForm {
     padding: 40px 0px;
@@ -2655,4 +2848,188 @@ body.modalBox {
 .modal-overlay.active {
     opacity: 1;
     visibility: visible;
+}
+/* Second-model */
+
+.second-Modal .cm-modal-body{
+    margin-top: 20px;
+}
+.second-Modal .inputField {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.second-Modal .inputField div{
+    position: relative;
+}
+.second-Modal .inputField div span {
+    position: absolute;
+    right: 18px;
+    top: 8px;
+}
+.second-Modal .inputField div .rotate1 {
+    transform: rotate(264deg);
+}
+.second-Modal .inputField input {
+    outline: none;
+    border: 1px solid rgba(18, 18, 18, 0.54);
+    border-radius: 8px;
+    height: 45px;
+}
+.second-Modal textarea {
+    height: 175px;
+    padding: 0;
+    margin: 0;
+    padding: 15px;
+    outline: none;
+    border: 1px solid rgba(18, 18, 18, 0.54);
+    border-radius: 8px;
+    display: block;
+}
+.second-Modal textarea:focus {
+    border: 1px solid rgba(18, 18, 18, 0.54);
+}
+
+.second-Modal .main-Heading-con h6 {
+    color: rgba(18, 18, 18, 0.87);
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.second-Modal .closBtn {
+    position: absolute;
+    top: -50px;
+    right: 10px;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+}
+.second-Modal .cm-modal-body .uploadCv h6 {
+    margin-bottom: 0px;
+    color: #696969;
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 0px;
+    padding-top: 34px;
+    text-transform: uppercase;
+}
+.second-Modal .submitBtn {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.second-Modal .submitBtn a,.second-Modal .submitBtn button {
+    color: #fff;
+    background-color: #E72078;
+    padding: 11px 0px;
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.second-Modal .submitBtn a:before,.second-Modal .submitBtn button:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background: #024099;
+    top: 0;
+    transition: all .3s ease-in-out;
+    z-index: -1;
+    border-radius: 6px;
+    left: 0;
+    pointer-events: none;
+}
+.second-Modal .submitBtn a:hover::before,.second-Modal .submitBtn button:hover::before{
+    width: 100%;
+}
+
+.uploadCv .uploadCvFiles {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 25px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.uploadCv .uploadCvFiles div {
+    margin-top: 15px;
+    position: relative;
+}
+
+.uploadCv .uploadCvFiles div a {
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid rgba(18, 18, 18, 0.54);;
+    padding: 12px 55px 12px 12px;
+    border-radius: 8px;
+    display: none;
+    color: #E72078;
+    border-color: #E72078;
+}
+::-webkit-file-upload-button {
+    font-size: 16px;
+    font-weight: 500;
+    color: transparent;
+    background-color: transparent;
+    border: 1px solid rgba(18, 18, 18, 0.54);
+    padding: 12px 70px 12px 12px;
+    border-radius: 8px;
+    display: inline-block;
+    text-transform: capitalize;
+}
+input#file-sr{
+    color: transparent;
+    width: 100%;
+    max-width: 195px;
+    margin-top: 15px;
+}
+.uploadCv .uploadCvFiles a.upImg {
+    position: absolute;
+    top: 25px;
+    pointer-events: none;
+    left: 140px;
+}
+label.fileNamec a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #696969;
+    text-transform: capitalize;
+    position: absolute;
+    left: 13px;
+    top: 27px;
+}
+.uploadCv .uploadCvFiles div a.cvfile.active {
+    display: inline-block;
+}
+.uploadCv .uploadCvFiles div a small{
+    position: absolute;
+    top: 12px;
+    right: 7px;
+}
+.second-Modal .textareaBox {
+    position: relative;
+}
+.uploadCvFiles label.fileNamec a {
+    color: #696969 !important;
+}
+.second-Modal .textareaBox span {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+}
+.form-control:focus{
+    box-shadow: none;
 }

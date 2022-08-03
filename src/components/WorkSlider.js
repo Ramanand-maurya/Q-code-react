@@ -38,8 +38,7 @@ export default class WorkSlider extends Component {
                                                         <p>{val.TopContent}</p>
                                                     </div>
                                                     <div className="recent-work-heading">
-                                                        <h4>{val.Title}<br></br>
-                                                            {val.TitleAfter} <span> {val.TitleSpan} <span>{val.TitleInnerSpan}</span></span></h4>
+                                                        <h4 dangerouslySetInnerHTML={{__html: val.Title}}></h4>
                                                     </div>
                                                     <div className="recent-work-para">
                                                         <p>{val.BottumContent}</p>
