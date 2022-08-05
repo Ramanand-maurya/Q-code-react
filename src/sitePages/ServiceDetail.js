@@ -22,14 +22,13 @@ function ServiceDetail(){
                 <span className="tri-1"></span>
                 <span className="tri-2"></span>
                 <span className="tri-3"></span>
-                <div className="row">
+                
                     {
-                        ServiceSliderData.filter(val => val.id == serviceId).map((val) =>{
+                        ServiceSliderData.filter(val => val.id == serviceId).map((val,i) =>{
                             return(
-                                <>
+                                <div className="row" key={i}>
                                     {val.AllServices.map((serValue,Index) =>{
                                     return(
-                                        <>
                                         <div className="col-md-6 col-lg-4 col-sm-6" key={Index}>
                                             <Link to={`/ServiceDetailPage/${val.id}/${serValue.id}`}>
                                                 <div className="card-serv">
@@ -47,14 +46,13 @@ function ServiceDetail(){
                                                 </div>
                                             </Link>
                                         </div>
-                                        </>
                                     )
                                 })}
-                                </>
+                                </div>
                             )
                         })
                     }
-                </div>
+                
             </div>
         </section>
         </>

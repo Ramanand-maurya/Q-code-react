@@ -8,14 +8,13 @@ function ServiceDetailPage(){
     return(
         <>
         {/* --------Services Detail Page---------- */}
-        <section className="Service-detail-page">
+        
         {
             ServiceSliderData.filter(val => val.id == serviceId).map((val) =>{
                 return(
-                    <>
+                    <section className="Service-detail-page" key={val.id}>
                         {val.AllServices.filter(serValue => serValue.id == serDetPageId).map((serValue,Index) =>{
                         return(
-                            <>
                             <div className="container" key={Index}>
                                 <div className="row">
                                     <div className="col-lg-6">
@@ -48,14 +47,12 @@ function ServiceDetailPage(){
                                 <span className="tri-4"></span>
                                 <span className="tri-5"></span>
                             </div>
-                            </>
                         )
-                    })}
-                    </>
+                    })} </section>
                 )
             })
         }
-        </section>
+       
         </>
     )
 }

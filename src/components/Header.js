@@ -19,6 +19,14 @@ const Navbar = () => {
     setisActive(ind);
   };
 
+  const [addActive, setaddActive] = useState(false);
+  const OpenAddActive = (childInd) => {
+    if (addActive === childInd) {
+      return setaddActive(null);
+    }
+    setaddActive(childInd);
+  };
+
   return (
     <>
       <section className="topHeader">
@@ -68,8 +76,8 @@ const Navbar = () => {
                       return (
                         <li className={`top-level-link ${menuVal.SubMenu ? "position-relative" : ""}`} key={Ind}>
                           {
-                            menuVal.SubMenu || menuVal.MegaMenu ? <a className={`${menuVal.MegaMenu || menuVal.SubMenu ? "mega-menu" : ""}`} onClick={() => OpenMenuActive(Ind)}><span>{menuVal.MenuItemName}</span></a> 
-                            : <NavLink activeclassname="current" to={ menuVal.MenuItemLink } onClick={() => OpenMenuActive(Ind)}><span>{menuVal.MenuItemName}</span></NavLink>
+                            menuVal.SubMenu || menuVal.MegaMenu ? <a className={`${menuVal.MegaMenu || menuVal.SubMenu ? "mega-menu" : ""}`} onClick={() => OpenMenuActive(Ind)}><span className={`${isActive ? "active" : ""}`}>{menuVal.MenuItemName}</span></a> 
+                            : <NavLink activeclassname="current" to={ menuVal.MenuItemLink }><span>{menuVal.MenuItemName}</span></NavLink>
                           }
                           
                           {menuVal.SubMenu || menuVal.MegaMenu ?
@@ -79,9 +87,9 @@ const Navbar = () => {
                                 menuVal.ChildMenu.map((childVal, childInd) => {
                                   return (
                                     <div className="col-md-12 col-lg-3 col-12" key={childInd}>
-                                      <h2 className={`sub-menu-head ${menuVal.SubMenu ? "submenuHLink" : ""}`}>{menuVal.SubMenu ? <span><Link to={childVal.MenuItemLInk}>{childVal.MenuItemName}</Link></span> : <span>{childVal.MenuItemName}</span>}</h2>
-                                      {childVal.SubMenu ?
-                                        <ul className="sub-menu-lists">
+                                      <h2 className={`sub-menu-head ${menuVal.SubMenu ? "submenuHLink" : ""} ${addActive === childInd ? "active" : ""}`} onClick={() => OpenAddActive(childInd)}>{menuVal.SubMenu ? <span><Link to={childVal.MenuItemLInk}>{childVal.MenuItemName}</Link></span> : <span>{childVal.MenuItemName}</span>}</h2>
+                                        {childVal.SubMenu ?
+                                        <ul className={`sub-menu-lists ${addActive === childInd ? "active" : ""}`}>
                                         {
                                           childVal.ChildMenuInner.map((cInnerVal, cInnerInd)=>{
                                             return(

@@ -3,7 +3,12 @@ import { Link,useParams } from "react-router-dom";
 import Banner from "../components/Banner";
 import AboutPage from "../components/AboutSec";
 import CareerData from "../components/CareerData";
+import emailjs from 'emailjs-com';
+import Swal from 'sweetalert2';
 
+const SERVICE_ID = "service_91oqefe";
+const TEMPLATE_ID = "template_lgwu4sg";
+const USER_ID = "5ERRn5zHR7R-Gdh09";
 function Career(){
     
     const [isOpen, setIsopen] = useState(false);
@@ -25,25 +30,29 @@ function Career(){
 
       const { jobId } = useParams();
 
-      const [data, setData] = useState({
-        fullname:"",
-        number:"",
-        email:"",
-        message:"",
-    });
-    const InputEvent = (event) => {
-    const { name, value } = event.target;
-    setData((preVal) => {
-        return {
-            ...preVal,
-            [name]: value,
-        }
-    });
-    };  
-    const formSubmit = (e) => {
+    const handleOnSubmit = (e) => {
         e.preventDefault();
-        alert(`My Name is : ${data.fullname}. My Emal Address is : ${data.email}. My Mobile Number is : ${data.number}. My Message is: ${data.message} `);
-    };
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
+          .then((result) => {
+            console.log(result.text);
+            Swal.fire({
+              icon: 'success',
+              title: 'Message Sent Successfully'
+            })
+          }, (error) => {
+            console.log(error.text);
+            Swal.fire({
+              icon: 'error',
+              title: 'Ooops, something went wrong',
+              text: error.text,
+            })
+          });
+        e.target.reset()
+      };
+        const [file, setFile] = useState(false)
+        const handleFileUpload = event => {
+            setFile(event.target.files[0].name);
+        };
 
     return(
         <>
@@ -163,9 +172,9 @@ function Career(){
         {/* ----Second modal section---------- */}
         <section className={`cm-section-modal second-Modal ${isFormOpen == true ? 'active' : ''}`}>
         {
-        CareerData.filter(val => val.id == jobId).map((val) => {
+        CareerData.filter(val => val.id == jobId).map((val,i) => {
             return(
-            <div className="cm-model-box">
+            <div className="cm-model-box" key={i}>
                 <div className="cm-modal-content">
                     <div className="cm-model-header">
                         <div className="container">
@@ -212,7 +221,7 @@ function Career(){
                         </div>
                     </div>
                     <div className="cm-modal-body">
-                        <form onSubmit={formSubmit}>
+                        <form onSubmit={handleOnSubmit}>
                             <div className="col-lg-12">
                                 <div className="row">
                                     <div className="container">
@@ -220,16 +229,16 @@ function Career(){
                                             <div className="col-lg-6 col-md-6">
                                                 <div className="inputField">
                                                     <div>
-                                                        <input type="text" placeholder="Full Name" name="fullname" value={data.fullname} onChange={InputEvent} className="form-control" />
+                                                        <input type="text" required placeholder="Full Name" name='user_name' className="form-control" />
                                                         <span><img src="/images/icon/User.svg" alt="user" /></span>
                                                     </div>
                                                     <div>
-                                                        <input type="text" placeholder="Mobile no." name="number" value={data.number} onChange={InputEvent} className="form-control" />
+                                                        <input type="text" required placeholder="Mobile no." name='mobile_number' className="form-control" />
                                                         <span className="rotate1"><img src="/images/icon/cil_phone.svg"
                                                                 alt="user" /></span>
                                                     </div>
                                                     <div>
-                                                        <input type="email" placeholder="Email" name="email" value={data.email} onChange={InputEvent} className="form-control" />
+                                                        <input type="email" required placeholder="Email" name='user_email' className="form-control" />
                                                         <span><img src="/images/icon/email.svg"
                                                                 alt="user" /></span>
                                                     </div>
@@ -237,7 +246,7 @@ function Career(){
                                             </div>
                                             <div className="col-lg-6 pl-1 col-md-6">
                                                 <div className="textareaBox">
-                                                    <textarea name="message" value={data.message} onChange={InputEvent} className="form-control"
+                                                    <textarea name="user_message" required className="form-control"
                                                         placeholder="Message"></textarea>
                                                     <span><img src="/images/icon/email-box.svg"
                                                             alt="user" /></span>
@@ -255,7 +264,7 @@ function Career(){
                                                     <div className="uploadCv">
                                                         <h6>upload CV<span>*</span></h6>
                                                         <div className="uploadCvFiles">
-                                                                <input id="file-sr" type="file" accept=".doc, .docx,.ppt, .pptx,.txt,.pdf" />
+                                                                <input id="file-sr" type="file" name="file_upload" onChange={handleFileUpload} accept=".doc,exe, .docx,.ppt, .pptx,.txt,.pdf" />
                                                             <a className="upImg">
                                                                 <img src="/images/icon/carbon_upload.svg" alt="upload CV" />
                                                             </a>
@@ -263,7 +272,7 @@ function Career(){
                                                                 <a>Choose File</a>
                                                             </label>
                                                             <div>
-                                                                <a href="" className="cvfile"><span>Designer.pdf</span>
+                                                                <a className={`cvfile ${file == false ? "" : "active"}`}><span>{file}</span>
                                                                     <small><img src="/images/icon/closeBtn.svg"
                                                                             alt="close-button" /></small></a>
                                                             </div>

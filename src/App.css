@@ -69,7 +69,6 @@ text-decoration: underline dotted;
 cursor: help;
 border-bottom: 0;
 }
-
 address {
 margin-bottom: 1rem;
 font-style: normal;
@@ -148,12 +147,12 @@ text-decoration: none;
 }
 
 a:not([href]):not([tabindex]) {
-color: inherit;
+/* color: inherit; */
 text-decoration: none;
 }
 
 a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
-color: inherit;
+/* color: inherit; */
 text-decoration: none;
 }
 
@@ -523,7 +522,8 @@ font-size: 20px;
   }
   
   .sub-menu-head {
-    margin: 10px 0;
+    padding: 10px 0;
+    margin: 0;
   }
   .sub-menu-head.submenuHLink a {
     font-size: 14px;
@@ -646,6 +646,7 @@ font-size: 20px;
     }
     ul.main-nav > li:hover > a.mega-menu > span{
         color: #E72078;
+        cursor: pointer;
     }
     ul.main-nav > li > a.mega-menu > span:after {
         width: 10px;
@@ -2379,7 +2380,7 @@ ul.main-nav > li > div.sub-menu-block.subMenuList .col-lg-3{
 }
 
 .servicesBtn div a.active,.servicesBtn div a:hover {
-    color: #E72078;
+    color: #E72078 !important;
     border-color: #E72078;
 }
 
@@ -2390,7 +2391,7 @@ ul.main-nav > li > div.sub-menu-block.subMenuList .col-lg-3{
     margin-top: 40px;
 }
 
-.sendMessageBtn a {
+.sendMessageBtn a,.sendMessageBtn button {
     background-color: #E72078;
     width: 100%;
     max-width: 312px;
@@ -2404,8 +2405,10 @@ ul.main-nav > li > div.sub-menu-block.subMenuList .col-lg-3{
     border-radius: 8px;
     position: relative;
     z-index: 1;
+    outline: none;
+    border: none;
 }
-.sendMessageBtn a:before {
+.sendMessageBtn a:before,.sendMessageBtn button::before {
     content: "";
     width: 0%;
     height: 0%;
@@ -2418,11 +2421,22 @@ ul.main-nav > li > div.sub-menu-block.subMenuList .col-lg-3{
     opacity: 0;
     transition: all .4s ease-in-out;
     z-index: -1;
-    border-radius: 4px;
+    border-radius: 8px;
     left: 0;
     pointer-events: none;
 }
-.sendMessageBtn a:hover:before {
+.swal2-confirm.swal2-styled{
+    background-color: #024099 !important;
+}
+.swal2-confirm.swal2-styled:focus{
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+}
+.swal2-title{
+    color: #E72078 !important;
+}
+.sendMessageBtn a:hover:before,.sendMessageBtn button:hover:before {
     width: 100%;
     height: 100%;
     opacity: 1;
@@ -3032,4 +3046,40 @@ label.fileNamec a {
 }
 .form-control:focus{
     box-shadow: none;
+}
+
+/* contact services button style */
+.selecotr-item{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.selector-item_radio{
+    appearance:none;
+    display:none;
+}
+.selector-item_label{
+    position:relative;
+    text-align:center;
+    transition-duration:.5s;
+    transition-property:transform, color;
+    transform:none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #696969;
+    border: 1px solid #696969;
+    padding: 12px 19px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+.selector-item_label:hover{
+    cursor: pointer;
+    color:#E72078;
+    border-color: #E72078;
+}
+.selector-item_radio:checked + .selector-item_label{
+    color:#E72078;
+    border-color: #E72078;
+    transform:translateY(-2px);
 }

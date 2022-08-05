@@ -56,8 +56,8 @@
         margin-left: -9px;
     }
     .servicesBtn div {
-        margin-left: 9px;
-        margin-top: 15px;
+        margin-left: 10px;
+        margin-top: 8px;
     }
     .servicesBtn .btnSecond2 div {
         margin-left: 0px;
@@ -129,6 +129,7 @@
     }
     .cm-modal-body ul li{
         font-size: 14px;
+        line-height: 26px;
     }
     .cm-section-modal .cm-model-header .linerCard .careerHead h6{
         font-size: 25px;
@@ -228,8 +229,12 @@
         position: absolute;
         right: 25px;
         top: 15px;
+        transition: all .3s;
     }
-
+    ul.main-nav>li>a.mega-menu>span.active:after{
+        transform: rotate(-135deg);
+        top: 20px;
+    }
     .triggerBtn {
         display: block;
         position: relative;
@@ -476,7 +481,7 @@
 
     .sub-menu-block.active {
         padding-top: 0px;
-        box-shadow: 0px 2px 7px #1d1c1c33;
+        box-shadow: 0px 1px 1px rgb(29 28 28 / 10%);
         display: block;
     }
 
@@ -520,7 +525,6 @@
         transform: rotate(45deg);
         transition: all .3s ease-in;
     }
-
     .sub-menu-block .sub-menu-head:hover::after {
         border-color: #E72078;
     }
@@ -1003,7 +1007,7 @@
     .contactForm .tri-2{
         display: none;
     }
-    .sendMessageBtn a{
+    .sendMessageBtn a,.sendMessageBtn button{
         max-width: 230px;
     }
     .banner-wrap .tri-3 {
@@ -1215,8 +1219,32 @@
     .main-header .logo-sec img {
         width: 80px;
     }
+    .uploadCv .uploadCvFiles div a {
+        padding: 8px 38px 8px 11px;
+        font-size: 12px;
+    }
+    .uploadCv .uploadCvFiles div a small img{
+        max-width: 18px;
+    }
+    .uploadCv .uploadCvFiles div a small {
+        top: 9px;
+    }
     .second-Modal .main-Heading-con h6{
         font-size: 25px;
+    }
+    ::-webkit-file-upload-button {
+        padding: 7px 76px 7px 11px;
+        font-size: 13px;
+    }
+    label.fileNamec a {
+        font-size: 13px;
+        top: 23px;
+    }
+    .uploadCv .uploadCvFiles a.upImg img{
+        max-width: 17px;
+    }
+    .uploadCv .uploadCvFiles a.upImg{
+        top:21px;
     }
     .opportunitiesSection .careerHeading p{
         padding-bottom: 20px;
@@ -1349,9 +1377,17 @@
     .contactForm .tri-3{
         display: none;
     }
-    .sendMessageBtn a{
+    .sendMessageBtn a,.sendMessageBtn button{
         font-size: 14px;
         padding: 12px 0px;
+    }
+    .selector-item_label{
+        font-size: 14px;
+        padding: 10px 10px;
+    }
+    .second-Modal .submitBtn a, .second-Modal .submitBtn button{
+        font-size: 14px;
+        padding: 8px 0px;
     }
     .addressBox .locationArea .adHead h5 span img{
         max-width: 22px;
